@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin: 0 0 2.5rem;
 }
 
@@ -40,10 +40,6 @@ a:hover {
   text-decoration: underline;
 }
 
-h2 {
-  font-size: 1.2rem;
-}
-
 #menu a {
   padding: 0 1rem;
   font-size: 1.2rem;
@@ -51,6 +47,10 @@ h2 {
 
 #menu .active {
   font-weight: bold;
+}
+
+ul {
+  padding: 0;
 }
 
 footer {

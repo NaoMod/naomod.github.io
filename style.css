@@ -16,10 +16,17 @@ main {
 }
 
 header {
-  background-color: #ccc;
+  background-color: #7bbeff;
+  color: #fafafa;
+  text-shadow: 1px 1px 2px #2F679C;
   text-align: center;
   padding: 1rem 1rem;
   margin-bottom: 3rem;
+  border-bottom: 3px solid #4198ec;
+}
+
+header a {
+  color: #fafafa;
 }
 
 h1 {
@@ -42,8 +49,9 @@ a:hover {
 }
 
 #menu a {
-  padding: 0 1rem;
+  margin: 0 1rem;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 ul {
@@ -57,5 +65,4 @@ footer {
 
 .logo {
   height: 10rem;
-  filter: grayscale(100%);
 }

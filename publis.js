@@ -16,7 +16,7 @@ function hal(opts = {}) {
   const base_opts = {
     wt: 'json',
     rows: 1000,
-    fq: 'structure_t:(atlanmodels)',
+    fq: 'structure_t:(naomod OR atlanmodels)',
     fl: ['docid', 'uri_s', 'label_s', 'authFullName_s', 'title_s',
          'producedDateY_i', 'files_s', 'conferenceTitle_s', 'journalTitle_s'
         ].join(','),

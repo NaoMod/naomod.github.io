@@ -46,10 +46,6 @@ a:hover {
   font-size: 1.2rem;
 }
 
-#menu .active {
-  font-weight: bold;
-}
-
 ul {
   padding: 0;
 }

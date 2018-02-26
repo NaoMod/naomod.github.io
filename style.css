@@ -18,7 +18,7 @@ main {
 header {
   background-color: #7bbeff;
   color: #fafafa;
-  text-shadow: 1px 1px 2px #2F679C;
+  text-shadow: 1px 1px 2px #2f679c;
   text-align: center;
   padding: 1rem 1rem;
   margin-bottom: 3rem;
@@ -45,13 +45,21 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid #ffc570;
+}
+
+#menu {
+  line-height: 200%;
 }
 
 #menu a {
   margin: 0 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.active {
+  border-bottom: 3px solid #ffc570;
 }
 
 ul {

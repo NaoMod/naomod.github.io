@@ -17,8 +17,9 @@ function hal(opts = {}) {
     wt: 'json',
     rows: 1000,
     fq: 'structure_t:(naomod OR atlanmodels)',
-    fl: ['docid', 'uri_s', 'label_s', 'authFullName_s', 'title_s',
-         'producedDateY_i', 'files_s', 'conferenceTitle_s', 'journalTitle_s'
+    fl: ['uri_s', 'authFullName_s', 'title_s', 'producedDateY_i',
+         'files_s', 'conferenceTitle_s', 'journalTitle_s', 'docType_s',
+         'citationRef_s'
         ].join(','),
     sort: 'producedDateY_i desc',
   }
@@ -29,6 +30,36 @@ function hal(opts = {}) {
   return `${base_url}?${base_opts_str}${opts_str}`
 }
 
+// Return the conference name or journal the publication is in,
+// or the empty string.
+function venue(pub) {
+  let v = pub.conferenceTitle_s || pub.journalTitle_s
+  // Some articles do not have `journalTitle` set, so extracting it from
+  // citationRef seems the only reliable way to get this info.
+  if (pub.docType_s === "ART") {
+    v = v || pub.citationRef_s.split(',')[0]
+  }
+  return v || ""
+}
+
+// Return a tag identifying the type of the publication (conference, journal,
+// preprint, thesis...)
+function tag(pub) {
+  let type
+  switch (pub.docType_s) {
+  case 'COMM': type = "Conference"; break
+  case 'ART': type = "Journal"; break
+  case 'UNDEFINED': type = "Preprint"; break
+  case 'THESE': type = "Thesis"; break
+  case 'HDR': type = "HDR"; break
+  }
+  if (type) {
+    return `<span class="tag">${type}</span>`
+  } else {
+    return ""
+  }
+}
+
 // Return HTML string from a list of publications object
 function publications_to_html(pubs) {
   let html = `<ul class="articles">`
@@ -36,7 +67,7 @@ function publications_to_html(pubs) {
     html +=`<li>
               <h4><a href="${p.uri_s}">${p.title_s[0]}</a></h4>
               <p class="name">${p.authFullName_s.join(", ")} (${p.producedDateY_i})</p>
-              <p class="venue">${p.conferenceTitle_s || p.journalTitle_s || ""}</p>
+              <p class="venue">${venue(p)}</p>${tag(p)}
               <div class="files">`
     if ("files_s" in p) {
       html += `<a href="${p.files_s[0]}">pdf</a>`

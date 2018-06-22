@@ -42,8 +42,8 @@ h2 {
 
 a {
   color: #333;
-  text-decoration: underline #777;
-  transition: border-width 80ms, text-decoration 80ms;
+  text-decoration: underline dotted;
+  transition: all 80ms;
 }
 
 a:hover {

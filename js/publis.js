@@ -1,5 +1,3 @@
-// (function(){
-
 // AJAX helper
 function getJSON(url, cb) {
   let xhr = new XMLHttpRequest()
@@ -11,6 +9,7 @@ function getJSON(url, cb) {
 }
 
 // Return HAL API URL augmented with eventual options
+// see https://api.archives-ouvertes.fr/docs/search for a list of fields and description
 function hal(opts = {}) {
   const base_url = "https://api.archives-ouvertes.fr/search/"
   const base_opts = {
@@ -21,7 +20,7 @@ function hal(opts = {}) {
          'files_s', 'conferenceTitle_s', 'journalTitle_s', 'docType_s',
          'citationRef_s'
         ].join(','),
-    sort: 'producedDateY_i desc',
+    sort: 'producedDate_s desc',
   }
 
   const base_opts_str = Object.entries(base_opts).map(([k,v]) => `${k}=${v}`).join('&')
@@ -93,16 +92,4 @@ function publications(start_year, end_year) {
   getJSON(hal({fq: `producedDateY_i:[${start_year} TO ${end_year}]`}), update);
 }
 
-// document.querySelector('main').innerHTML = `
-// <div class='yearbar'>
-//     <button onclick='getPublications()'>All</button>
-//     <button onclick='getPublicationsYear(2017,2017)'>2017</button>
-//     <button onclick='getPublicationsYear(2016,2016)'>2016</button>
-//     <button onclick='getPublicationsYear(2015,2015)'>2015</button>
-//     <button onclick='getPublicationsYear(2001,2014)'>Before 2015</button>
-// </div>
-// <h4>Source: <a href="https://hal.archives-ouvertes.fr/">HAL</a>.</h4>
-// `
 publications(2017, 2023)
-
-//}());

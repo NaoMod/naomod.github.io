@@ -8,6 +8,7 @@ permanent:
     affiliation: University of Nantes
     picture: gerson.jpg
     website: https://sunye.github.io/
+    teamlead: yes
 
   - name: Erwan Bousse
     title: Associate Professor
@@ -178,7 +179,7 @@ former:
     {% for member in page.permanent %}
     <li>
       <img alt="Picture of {{ member.name }}" src="img/members/{{ member.picture }}">
-      <span class="name">
+      <span class="name {% if member.teamlead %}team-lead{% endif %}">
         {% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>
         {% else %}{{ member.name }}
         {% endif %}

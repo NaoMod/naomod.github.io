@@ -42,7 +42,7 @@ h2 {
 
 a {
   color: #333;
-  text-decoration: underline dotted;
+  text-decoration: underline #999;
   transition: all 80ms;
 }
 

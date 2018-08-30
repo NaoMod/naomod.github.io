@@ -1,0 +1,143 @@
+---
+layout: default
+title: Paper of the Week
+
+papers:
+- date: 2018-09-04
+  speaker: Hugo
+  title: Empirical Assessment of MDE in Industry
+  authors: John Edward Hutchinson, Jon Whittle, Mark Rouncefield, Steinar Kristoffersen
+  venue: ICSE
+  year: 2011
+  url: https://edisciplinas.usp.br/pluginfile.php/133169/mod_resource/content/1/p471-hutchinson.pdf
+  tag: State of the art
+
+- date: 2018-08-28
+  speaker: Thibault
+  title: Hybrid Regression Test Selection
+  authors: Lingming Zhang
+  venue: ICSE
+  year: 2018
+  url: http://www.utdallas.edu/~lxz144130/publications/icse2018.pdf
+  tag: State of the art
+
+- date: 2018-08-07
+  speaker: Massimo
+  title: Propositions as Types
+  authors: Philip Wadler
+  venue: CACM
+  year: 2015
+  url: http://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf
+  tag: Classic
+
+- date: 2018-07-31
+  speaker: Imad
+  title: "Verdi: A Framework for Implementing and Formally Verifying Distributed Systems"
+  authors: James R. Wilcox, Doug Woos, Pavel Panchekha, Zachary Tatlock, Xi Wang, Michael D. Ernst, Thomas E. Anderson
+  venue: PLDI
+  year: 2015
+  url: https://www.cs.columbia.edu/~junfeng/17sp-e6121/papers/verdi.pdf
+  tag: State of the art
+
+- date: 2018-07-24
+  speaker: Zheng
+  title: Energy Profiles of Java Collections Classes
+  authors: Samir Hasan, Zachary King, Munawar Hafiz, Mohammed Sayagh, Bram Adams, Abram Hindle
+  venue: ICSE
+  year: 2016
+  url: http://softwareprocess.es/pubs/hasan2016ICSE-Energy-Profiles-of-Java-Collections-Classes.pdf
+  tag: State of the art
+
+- date: 2018-07-17
+  speaker: Florent
+  title: Generalized Data Structure Synthesis
+  authors: Calvin Loncaric, Michael D. Ernst, Emina Torlak
+  venue: ICSE
+  year: 2018
+  url: https://cozy.uwplse.org/cozy2.pdf
+  tag: State of the art
+
+- date: 2018-07-10
+  speaker: Massimo
+  title: Time, Clocks, and the Ordering of Events in a Distributed System
+  authors: Leslie Lamport
+  venue: CACM
+  year: 1978
+  url: https://citemaster.net/get/10b50274-7bc5-11e5-8aa1-00163e009cc7/p558-lamport.pdf
+  tag: Classic
+
+---
+
+<style>
+  .papers {
+    list-style: none;
+    padding-top: 2rem;
+  }
+
+  .papers li {
+    margin-bottom: 3rem;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-family: serif;
+    font-weight: normal;
+    margin: 0 0 .25rem 0;
+  }
+
+  .authors {
+    color: #666;
+    font-family: serif;
+    margin: 0 0 .4rem 0;
+  }
+
+  .venue {
+    color: #666;
+    margin: 0;
+    font-family: serif;
+    font-style: italic;
+    display: inline;
+  }
+
+  time {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    float: right;
+  }
+
+  .tag {
+    color: #444;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: .1rem .3rem;
+    margin-right: .5rem;
+  }
+
+  .tag.classic {
+    color: #ffe59e;
+    background-color: #784614;
+  }
+
+  .tag.state-of-the-art {
+    color: #444;
+    background-color: #eedd1a;
+  }
+</style>
+
+<p>We read on Tuesdays at 10:30.</p>
+
+<p>Here is the list of all the papers we read so far.</p>
+
+<ul class="papers">
+  {% for paper in page.papers %}
+    <li>
+      <h4><a href="{{ paper.url }}">{{ paper.title }}</a></h4>
+      <p class="authors">{{ paper.authors }}</p>
+      {% if paper.tag %}<span class="tag {{paper.tag | slugify }}">{{ paper.tag }}</span>{% endif %}
+      <p class="venue">{{ paper.venue }} {{ paper.year }}</p>
+      <time datetime="{{ paper.date }}">{{ paper.date | date_to_string: "ordinal", "US" }}</time>
+    </li>
+  {% endfor %}
+</ul>

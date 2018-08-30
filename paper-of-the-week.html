@@ -93,14 +93,13 @@ papers:
 
   .venue {
     color: #666;
-    margin: 0;
     font-family: serif;
     font-style: italic;
     display: inline;
   }
 
   time {
-    margin: 0;
+    margin: .2rem 0 0 0;
     font-size: 14px;
     color: #666;
     float: right;
@@ -137,7 +136,7 @@ papers:
       <p class="authors">{{ paper.authors }}</p>
       {% if paper.tag %}<span class="tag {{paper.tag | slugify }}">{{ paper.tag }}</span>{% endif %}
       <p class="venue">{{ paper.venue }} {{ paper.year }}</p>
-      <time datetime="{{ paper.date }}">{{ paper.date | date_to_string: "ordinal", "US" }}</time>
+      <time datetime="{{ paper.date }}">{{ paper.date | date_to_long_string }}</time>
     </li>
   {% endfor %}
 </ul>

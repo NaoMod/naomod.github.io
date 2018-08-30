@@ -83,12 +83,12 @@ let publications_period = "";
 
 // Update the HTML with the publications object
 function update(pubs) {
-  document.querySelector('main').innerHTML = publications_to_html(pubs)
+  document.getElementById('publis').innerHTML = publications_to_html(pubs)
 }
 
 function publications(start_year, end_year) {
   publications_period = (start_year == end_year ? (" in "+start_year) : (" from "+start_year+" to "+end_year));
-  document.querySelector('main').innerHTML = `<p>Loading publications${publications_period}...</p>`
+  document.getElementById('publis').innerHTML = `<p>Loading publications${publications_period}...</p>`
   getJSON(hal({fq: `producedDateY_i:[${start_year} TO ${end_year}]`}), update);
 }
 

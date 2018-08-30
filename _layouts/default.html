@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}NaoMod &mdash; {{ page.title }}{% else %}NaoMod{% endif %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+    <header>
+      <h1><a href="/">NaoMod</a></h1>
+      <h2>Nantes Software Modeling Group</h2>
+      <nav id="menu">
+        {% for link in site.data.navigation %}
+          {% assign active = nil %}
+          {% if page.url == link.url %}
+            {% assign active = "active" %}
+          {% endif %}
+        <a class="{{ active }}" href="{{ link.url }}">{{ link.text }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <img class="logo" src="img/logo-ls2n.svg" style="height: 9rem">
+      <img class="logo" src="img/logo-imta.svg">
+    </footer>
+  </body>
+</html>

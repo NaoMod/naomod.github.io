@@ -66,6 +66,34 @@ papers:
   url: https://citemaster.net/get/10b50274-7bc5-11e5-8aa1-00163e009cc7/p558-lamport.pdf
   tag: Classic
 
+speakers:
+  - name: Gerson
+    picture: gerson.jpg
+
+  - name: Erwan
+    picture: erwan.jpg
+
+  - name: Hugo
+    picture: hugo.jpg
+
+  - name: Jean-Marie
+    picture: jmm.jpg
+
+  - name: Massimo
+    picture: massimo.jpg
+
+  - name: Imad
+    picture: imad.jpg
+
+  - name: Thibault
+    picture: thibault.jpg
+
+  - name: Zheng
+    picture: cheng.jpg
+
+  - name: Florent
+    picture: fmdkdd.jpg
+
 ---
 
 <style>
@@ -75,6 +103,7 @@ papers:
   }
 
   .papers li {
+    clear: both;
     margin-bottom: 3rem;
   }
 
@@ -83,6 +112,7 @@ papers:
     font-family: serif;
     font-weight: normal;
     margin: 0 0 .25rem 0;
+    display: inline-block;
   }
 
   .authors {
@@ -95,14 +125,7 @@ papers:
     color: #666;
     font-family: serif;
     font-style: italic;
-    display: inline;
-  }
-
-  time {
-    margin: .2rem 0 0 0;
-    font-size: 14px;
-    color: #666;
-    float: right;
+    margin: 0 0 .4rem 0;
   }
 
   .tag {
@@ -123,6 +146,24 @@ papers:
     color: #444;
     background-color: #eedd1a;
   }
+
+  .speaker {
+    float: right;
+  }
+
+  .speaker img {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    margin-left: auto;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px #888;
+  }
+
+  .speaker time {
+    font-size: 14px;
+    color: #666;
+  }
 </style>
 
 <p>We read on Tuesdays at 10:30.</p>
@@ -133,10 +174,14 @@ papers:
   {% for paper in page.papers %}
     <li>
       <h4><a href="{{ paper.url }}">{{ paper.title }}</a></h4>
+      <div class="speaker">
+        {% assign the_speaker = page.speakers | where:"name",paper.speaker | first %}
+        <img src="img/members/{{ the_speaker.picture }}">
+        <time datetime="{{ paper.date }}">{{ paper.date | date_to_long_string }}</time>
+      </div>
       <p class="authors">{{ paper.authors }}</p>
-      {% if paper.tag %}<span class="tag {{paper.tag | slugify }}">{{ paper.tag }}</span>{% endif %}
       <p class="venue">{{ paper.venue }} {{ paper.year }}</p>
-      <time datetime="{{ paper.date }}">{{ paper.date | date_to_long_string }}</time>
+      {% if paper.tag %}<span class="tag {{paper.tag | slugify }}">{{ paper.tag }}</span>{% endif %}
     </li>
   {% endfor %}
 </ul>

@@ -79,17 +79,15 @@ function publications_to_html(pubs) {
   return html
 }
 
-let publications_period = "";
-
 // Update the HTML with the publications object
 function update(pubs) {
   document.getElementById('publis').innerHTML = publications_to_html(pubs)
 }
 
 function publications(start_year, end_year) {
-  publications_period = (start_year == end_year ? (" in "+start_year) : (" from "+start_year+" to "+end_year));
+  const publications_period = (start_year == end_year ? (" in "+start_year) : (" from "+start_year+" to "+end_year));
   document.getElementById('publis').innerHTML = `<p>Loading publications${publications_period}...</p>`
   getJSON(hal({fq: `producedDateY_i:[${start_year} TO ${end_year}]`}), update);
 }
 
-publications(2017, 2023)
+publications(2017, (new Date()).getFullYear())

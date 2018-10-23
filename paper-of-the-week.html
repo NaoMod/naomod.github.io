@@ -3,7 +3,7 @@ layout: default
 title: Paper of the Week
 
 papers:
-- date: 2018-10-23
+- date: 2018-11-06
   speaker: Jean-Marie
   title: "DeepMutation: Mutation Testing of Deep Learning Systems"
   authors: Lei Ma, Fuyuan Zhang, Jiyuan Sun, Minhui Xue, Bo Li, Felix Juefei-Xu, Chao Xie, Li Li, Yang Liu, Jianjun Zhao, Yadong Wang
@@ -11,6 +11,9 @@ papers:
   year: 2018
   url: https://arxiv.org/pdf/1805.05206
   tag: State of the art
+
+- date: 2018-10-30
+  speaker: TBD
 
 - date: 2018-10-16
   speaker: Gerson
@@ -148,6 +151,9 @@ speakers:
   - name: Florent
     picture: fmdkdd.jpg
 
+  - name: TBD
+    picture: none.png
+
 ---
 
 <style>
@@ -157,8 +163,8 @@ speakers:
   }
 
   .papers li {
-    clear: both;
     margin-bottom: 3rem;
+    display: flex;
   }
 
   h4 {
@@ -191,18 +197,16 @@ speakers:
     margin-right: .5rem;
   }
 
-  .tag.classic {
-    color: #ffe59e;
-    background-color: #784614;
+  .bib-info {
+    flex: 1;
   }
 
-  .tag.state-of-the-art {
-    color: #444;
-    background-color: #eedd1a;
+  .free-slot {
+    font-style: italic;
   }
 
   .speaker {
-    float: right;
+    margin-left: 1rem;
   }
 
   .speaker img {
@@ -217,7 +221,21 @@ speakers:
   .speaker time {
     font-size: 14px;
     color: #666;
+    white-space: nowrap;
   }
+
+  .next time { color: #e6a }
+  .next .speaker img { box-shadow: 1px 1px 4px #e6a }
+  .next {
+    animation: flash 1s;
+  }
+  @keyframes flash {
+    from { background-color: inherit }
+    50%  { background-color: #e6a }
+    to   { background-color: inherit }
+  }
+  .upcoming { opacity: 0.5 }
+
 </style>
 
 <p>We read on Tuesdays at 10:30.</p>
@@ -227,15 +245,42 @@ speakers:
 <ul class="papers">
   {% for paper in page.papers %}
     <li>
-      <h4><a href="{{ paper.url }}">{{ paper.title }}</a></h4>
+      <div class="bib-info">
+        {% if paper.speaker == 'TBD' %}
+        <h4 class="free-slot">This slot is free.  Maybe you could take it?</h4>
+        {% else %}
+        <h4><a href="{{ paper.url }}">{{ paper.title }}</a></h4>
+        <p class="authors">{{ paper.authors }}</p>
+        <p class="venue">{{ paper.venue }} {{ paper.year }}</p>
+        {% endif %}
+      </div>
       <div class="speaker">
         {% assign the_speaker = page.speakers | where:"name",paper.speaker | first %}
         <img src="img/members/{{ the_speaker.picture }}">
         <time datetime="{{ paper.date }}">{{ paper.date | date_to_long_string }}</time>
       </div>
-      <p class="authors">{{ paper.authors }}</p>
-      <p class="venue">{{ paper.venue }} {{ paper.year }}</p>
-      {% if paper.tag %}<span class="tag {{paper.tag | slugify }}">{{ paper.tag }}</span>{% endif %}
     </li>
   {% endfor %}
 </ul>
+
+<script>
+  // Return the papers that haven't been presented until now
+  function upcoming(now) {
+    const times = document.querySelectorAll('time')
+    return [].filter.call(times, t => {
+      const then = new Date(t.getAttribute('datetime'))
+      // Since the <time> doesn't contain the hour, set it here
+      then.setHours(11)
+      return then > now
+    }).map(t => t.closest('li'))
+  }
+
+  function highlightUpcoming() {
+    const up = upcoming(new Date())
+    const next = up.pop()
+    next.classList.add('next')
+    ;[].map.call(up, p => p.classList.add('upcoming'))
+  }
+
+  highlightUpcoming()
+</script>

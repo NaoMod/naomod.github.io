@@ -51,6 +51,14 @@ a:hover {
   border-bottom: 3px solid #ffc570;
 }
 
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  border: none;
+}
+
 #menu {
   line-height: 200%;
 }

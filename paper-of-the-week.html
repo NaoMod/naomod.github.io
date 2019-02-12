@@ -338,7 +338,7 @@ speakers:
     return [].filter.call(times, t => {
       const then = new Date(t.getAttribute('datetime'))
       // Since the <time> doesn't contain the hour, set it here
-      then.setHours(11)
+      then.setHours(14)
       return then > now
     }).map(t => t.closest('li'))
   }

@@ -74,6 +74,7 @@ transient:
   - name: Mohammadreza Sharbaf
     title: Ph.D. Student
     picture: mohammadreza.png
+    affiliation: Cotutelle with the University of Isfahan
     website: http://msharbaf.ir/
 
 former:
@@ -237,11 +238,23 @@ former:
   </ul>
 </section>
 
+
+  
+<!--     <ul class="past-members">
+      {% for member in page.former %}
+      <li>{% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+<img src="img/former.jpg" alt="Former team group photo" usemap="#potw" align="right"> -->
+
+
 <section>
   <h3>Former Members</h3>
-  <ul class="past-members">
+<p>
+  <a href="img/former.jpg"><img src="img/former.jpg" alt="Former team group photo" usemap="#potw" align="left" width="55%" hspace="20"></a>
+  <ul class="past-members" align="left">
     {% for member in page.former %}
     <li>{% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</li>
     {% endfor %}
   </ul>
-</section>
+</p></section>

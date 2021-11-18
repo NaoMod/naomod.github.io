@@ -8,6 +8,20 @@ openingtype:
   - Post-doc
 
 openings:
+  - title: Event-driven API Orchestration Architecture
+    type: Internship
+    duration: 6 months
+    employer: SALVIA Developpement, Aubervilliers (France)
+    tags: Web APIs, GUI, Enterprise Application Integration (EAI)
+    doc: doc/Internship_salvia.pdf
+
+  - title: Vers un modèle de référence pour l’alignement métier-IT
+    type: Internship
+    duration: 6 months
+    employer: Université de Nantes (France) and Obeo (France)
+    tags: Information Technology (IT), Business-IT Alignement (BITA)
+    doc: doc/Modele_reference_BITA.pdf
+
   - title: Performance Benchmarking of Executable Domain-Specific Languages
     type: Internship
     duration: 5-6 months
@@ -78,7 +92,7 @@ openings:
 {% if opening.type == type %}
 <section>
   <h3><a href="{{ opening.doc }}"> {{ opening.title }} </a></h3>
-  <span class="opening-type"> {{ opening.tag }} </span>
+  <span class="opening-type"> {{ opening.tags }} </span>
   <p>
     <ul>
       <li>Duration: {{opening.duration}} </li>

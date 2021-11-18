@@ -2,6 +2,39 @@
 layout: default
 title: Openings
 
+openingtype:
+  - Internship
+  - Ph.D.
+  - Post-doc
+
+openings:
+  - title: Performance Benchmarking of Executable Domain-Specific Languages
+    type: Internship
+    duration: 5-6 months
+    employer: Université de Nantes , Nantes, France
+    tags: Model-Driven Engineering, Industry 4.0, Domain-Specific Languages, Software Testing
+    doc: doc/WP2-internship-subject-Master-SoftwareEngineering-V1.1.pdf
+
+  - title: Postdoc position on Model-Driven Engineering for Low-Code Development Platforms (Lowcomote project - Marie Skłodowska‐Curie)
+    type: Post-doc
+    duration: 1-year (+ 1-year renewable)
+    employer: IMT Atlantique, Nantes, France
+    tags: Lowcode, Modeling, Cloud Computing, Software Engineering
+    doc: doc/Postdoc_Lowcomote.pdf
+
+  - title: Master Internship in Software Engineering and Artificial Intelligence for Mechanistic Modeling in Epidemiology
+    type: Internship
+    duration: 5-6 months
+    employer: IMT ATLANTIQUE Bretagne-Pays de la Loire (France) and Oniris (France)
+    tags: domain-specific language (DSL), mechanistic modeling, software, engineering, knowledge representation, AI, epidemiology
+    doc:
+
+  - title: Unifying Model Execution Facilities for Heterogeneous Metaprogramming Approaches
+    type: Internship
+    duration: 5-6 months
+    employer: Université de Nantes (France)
+    tags: software language engineering (SLE), domain-specific languages (DSLs), metaprogramming, model execution
+    doc:
 ---
 
 <style>
@@ -24,112 +57,36 @@ title: Openings
     margin-top: -0.8rem;
     margin-left: 1rem;
   }
+  h1 {
+    font-size: 32px;
+  }
 </style>
 
 <!------------------------------------------------------------------------------------------------------------------------->
 
-<section>
-  <h3><a href="doc/WP2-internship-subject-Master-SoftwareEngineering-V1.1.pdf">Performance Benchmarking of Executable Domain-Specific Languages</a></h3>
-  <span class="opening-type">Model-Driven Engineering, Industry 4.0, Domain-Specific Languages,
-    Software Testing</span>
+{% for type in page.openingtype %}
 
+{% assign count = 0 %}
+
+{% for opening in page.openings %}
+  {% if opening.type == type %} {% assign count = count | plus:1 %} {% endif %}
+{% endfor %}
+
+{% if count >= 1 %}
+<h1>{{ type }}</h1>
+{% for opening in page.openings %}
+{% if opening.type == type %}
+<section>
+  <h3><a href="{{ opening.doc }}"> {{ opening.title }} </a></h3>
+  <span class="opening-type"> {{ opening.tag }} </span>
   <p>
     <ul>
-      <li>Type: Internship</li>
-      <li>Duration: 5-6 months</li>
-      <li>Employer: Université de Nantes , Nantes, France</li>
+      <li>Duration: {{opening.duration}} </li>
+      <li>Employer: {{opening.employer}} </li>
     </ul>
   </p>
 </section>
-
-<!------------------------------------------------------------------------------------------------------------------------->
-
-<section>
-  <h3><a href="doc/Postdoc_Lowcomote.pdf">Postdoc position on Model-Driven Engineering for Low-Code Development Platforms (Lowcomote project - Marie Skłodowska‐Curie)</a></h3>
-  <span class="opening-type">#lowcode #modeling #cloudcomputing #softwareengineering #mariecurie #h2020 #naomod</span>
-
-  <p>
-    <ul>
-      <li>Type: Post-doc</li>
-      <li>Duration: 1-year (+ 1-year renewable)</li>
-      <li>Employer: IMT Atlantique, Nantes, France</li>
-    </ul>
-  </p>
-</section>
-
-<!------------------------------------------------------------------------------------------------------------------------->
-
-<section>
-  <h3><a href="doc/M2-IMT-Oniris-Eng.pdf">Master Internship in Software Engineering and Artificial Intelligence for Mechanistic Modeling in Epidemiology</a> [<a href="doc/M2-IMT-Oniris.pdf">FR</a>]</h3>
-  <span class="opening-type">domain-specific language (DSL), mechanistic modeling, software, engineering, knowledge representation, AI, epidemiology</span>
-  <p>
-    <ul>
-      <li>Type: Internship</li>
-      <li>Duration: 5-6 months</li>
-      <li>Employer: IMT ATLANTIQUE Bretagne-Pays de la Loire (France) and Oniris (France)</li>
-    </ul>
-  </p>
-  </section>
-
-
-<!------------------------------------------------------------------------------------------------------------------------->
-
-<section>
-  <h3><a href="doc/Internship_Naomod_2021.pdf">Unifying Model Execution Facilities for Heterogeneous Metaprogramming Approaches</a></h3>
-  <span class="opening-type">software language engineering (SLE), domain-specific languages (DSLs), metaprogramming, model execution</span>
-  <p>
-    <ul>
-      <li>Type: Internship</li>
-      <li>Duration: 5-6 months</li>
-      <li>Employer: Université de Nantes (France)</li>
-    </ul>
-  </p>
-</section>
-
-<!------------------------------------------------------------------------------------------------------------------------->
-<!--
-<section>
-  <h3><a href="doc/phd_position.pdf">PhD position in Software Engineering and Modeling with Machine Learning (AIDOaRt project - ECSEL H2020)</a></h3>
-  <span class="opening-type">#softwareengineering #modeling #machinelearning #ai #ecsel #h2020 #naomod</span>
-  
-  <p>
-    <ul>
-      <li>Type: PhD</li>
-      <li>Duration: 3 years</li>
-      <li>Start: September/October 2021</li>
-      <li>Employer: IMT Atlantique Bretagne-Pays de la Loire (France)</li>
-    </ul>
-  </p>
-  </section>
--->
-<!------------------------------------------------------------------------------------------------------------------------->
-<!--
-<section>
-<h3><a href="doc/RE_Ecoplex_en.pdf">Research Engineer position for the Ecoplex project</a> [<a href="doc/RE_Ecoplex_vf.pdf">FR</a>] </h3><br/>
-<span class="opening-type">#MBSE, #Ecodesign, #Life-cycle assessment, #Capella</span>
-
-<p>
-  <ul>
-    <li>Type: Research Engineer (Ingénieur Recherche)</li>
-    <li>Duration: 18 months</li>
-    <li>Employer: University of Nantes (France)</li>
-  </ul>
-</p>
-</section>
--->
-<!------------------------------------------------------------------------------------------------------------------------->
-<!--
-<section>
-  <h3><a href="doc/postdoc_position.pdf">Post-Doctoral position in Software Engineering and Modeling with Machine Learning</a></h3>
-  <span class="opening-type">#softwareengineering #modeling #mde #machinelearning #softwarearchitecture #metaheuristics #atlanstic2020 #ivado #naomod #geodes #ls2n</span>
-
-  <p>
-    <ul>
-      <li>Type: Post-doc</li>
-      <li>Duration: 1-year (+ 1-year renewable)</li>
-      <li>Employer: University of Nantes (France) and University of Quebec (Canada)</li>
-    </ul>
-  </p>
-</section>
--->
-<!------------------------------------------------------------------------------------------------------------------------->
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

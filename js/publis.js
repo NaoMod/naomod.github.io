@@ -90,4 +90,4 @@ function publications(start_year, end_year) {
   getJSON(hal({fq: `producedDateY_i:[${start_year} TO ${end_year}]`}), update);
 }
 
-publications(2017, (new Date()).getFullYear())
+publications(2017, (new Date()).getFullYear()+1)

@@ -40,7 +40,7 @@ title: Publications
 
 <ul id="publis">
   {% capture current_year %}{{ site.time | date: "%Y" }}{% endcapture %}
-  {% for year in (2017..current_year) reversed %}
+  {% for year in (2017..(current_year+1)) reversed %}
   <li><a href="http://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?annee_publideb={{ year }}&annee_publifin={{ year }}&labos_exp=naomod&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=typdoc&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css">Publications {{ year }}</a></li>
   {% endfor %}
 </ul>

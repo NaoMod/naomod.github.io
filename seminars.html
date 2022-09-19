@@ -71,10 +71,11 @@ title: Weekly Seminar
   <span class="date">{{ event.start_time | date: "%Y-%m-%d − %H:%M" }}</span>
 </div>
 
+<div class="description">
+  {{ event.description | markdownify }}
+</div>
 
-{{ event.description | markdownify }}
 
 {% endical %}
-
 
 

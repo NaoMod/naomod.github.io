@@ -1,4 +1,4 @@
-exclude: [ README.md, bundle ]
+exclude: [ README.md, bundle, _site, site, _data, _layouts ]
 
 plugins:
   - jekyll-ical-tag

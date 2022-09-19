@@ -1,0 +1,80 @@
+---
+layout: default
+title: Weekly Seminar
+---
+
+
+<style>
+  .presentation { 
+    font-size: 1.2rem; 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+  }
+  .title{
+    font-weight: bold;
+    display: inline-block;
+    width: 160px;
+  }
+  .date {
+    color: #666;
+    margin-left: 1rem
+  }
+  .description {
+    margin-left: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+</style>
+
+<h1> {{ page.title }} </h1>
+
+<p> All dates are shown in Central European Time (CET).</p>
+
+<p>This page is automatically generated from <a href="http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars">this ICS file</a>.</p>
+
+
+
+
+<h2> Next seminars </h2>
+<hr/>
+
+{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: false only_future: true %}
+
+
+<div class="presentation">
+  <div class="title">{{ event.summary }}</div> 
+  <span class="date">{{ event.start_time | date: "%Y-%m-%d − %H:%M" }}</span>
+</div>
+
+<div class="description">
+  {{ event.description | markdownify }}
+</div>
+
+
+{% endical %}
+
+
+
+
+
+
+<h2> Past seminars </h2>
+<hr/>
+
+{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: true only_past: true %}
+
+<div class="presentation">
+  <div class="title">{{ event.summary }}</div> 
+  <span class="date">{{ event.start_time | date: "%Y-%m-%d − %H:%M" }}</span>
+</div>
+
+
+{{ event.description | markdownify }}
+
+{% endical %}
+
+
+

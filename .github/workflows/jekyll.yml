@@ -19,6 +19,5 @@ jobs:
     # Specify the target branch (optional)
     - uses: helaili/jekyll-action@v2
       with:
-        bundler_version: "2.3.22"
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'

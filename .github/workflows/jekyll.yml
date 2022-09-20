@@ -13,19 +13,7 @@ jobs:
     - run: chown 1000:1000 -R .
     - run: bundle install
     - run: jekyll build
-    - uses: actions/upload-artifact@v3
-      with:
-        name: _site
-        path: _site
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - uses: actions/download-artifact@v2
-      with:
-        name: _site
-        path: _site
+    - run: apk install rsync
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:

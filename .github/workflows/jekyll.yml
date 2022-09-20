@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: docker.io/jekyll/minimal
-      options: --user root
+      options: --user 1000:1000
     steps:
     - uses: actions/checkout@v3
 

@@ -10,6 +10,7 @@ jobs:
       image: docker.io/jekyll/minimal
     steps:
     - run: apk add rsync
+    - run: git config --global --add safe.directory '*'
     - uses: actions/checkout@v3
     - run: chown 1000:1000 -R .
     - run: bundle install
@@ -21,7 +22,7 @@ jobs:
 
     # - name: Init new repo in dist folder and commit generated files
     #   run: |
-    #     git config --global --add safe.directory '*'
+    #     
     #     cd _site
     #     git init
     #     git add -A

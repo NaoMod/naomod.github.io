@@ -1,7 +1,12 @@
 name: Build Jekyll and deploy Github page
 
 on:
-  push
+  # Build on each push
+  push:
+  
+  # Re-build everyday at midnight (to fetch new ICAL content)
+  schedule:
+    - cron:  '0 0 * * *'
 
 jobs:
   build:

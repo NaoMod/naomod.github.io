@@ -6,7 +6,7 @@ on:
 jobs:
   jekyll:
     runs-on: ubuntu-latest
-    container: docker.io/jekyll:minimal
+    container: docker.io/jekyll/minimal
     steps:
     - uses: actions/checkout@v3
 

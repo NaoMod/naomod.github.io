@@ -6,7 +6,10 @@ on:
 jobs:
   jekyll:
     runs-on: ubuntu-latest
-    container: docker.io/jekyll/minimal
+    container: 
+      image: docker.io/jekyll/minimal
+      volumes:
+        - ""
     steps:
     - uses: actions/checkout@v3
 
@@ -23,5 +26,7 @@ jobs:
     #     token: ${{ secrets.GITHUB_TOKEN }}
     #     target_branch: 'gh-pages'
 
+    - run: pwd
+    - run: ls -lah
     - run: bundle install
     - run: jekyll build

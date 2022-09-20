@@ -4,7 +4,7 @@ on:
   push
 
 jobs:
-  jekyll:
+  build:
     runs-on: ubuntu-latest
     container: 
       image: docker.io/jekyll/minimal
@@ -13,6 +13,17 @@ jobs:
     - run: chown 1000:1000 -R .
     - run: bundle install
     - run: jekyll build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: site
+        path: _site
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        name: site
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:

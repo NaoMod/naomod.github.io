@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: docker.io/jekyll/minimal
-      volumes:
-        - ""
     steps:
     - uses: actions/checkout@v3
 

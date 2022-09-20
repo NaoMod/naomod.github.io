@@ -8,23 +8,31 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: docker.io/jekyll/minimal
-      # options: --user 1000:1000
     steps:
     - uses: actions/checkout@v3
-
-    # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    # - uses: actions/cache@v2
-    #   with:
-    #     path: vendor/bundle
-    #     key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-    #     restore-keys: |
-    #       ${{ runner.os }}-gems-
-    # Specify the target branch (optional)
-    # - uses: helaili/jekyll-action@v2
-    #   with:
-    #     token: ${{ secrets.GITHUB_TOKEN }}
-    #     target_branch: 'gh-pages'
-
     - run: chown 1000:1000 -R .
     - run: bundle install
     - run: jekyll build
+
+    - name: Init new repo in dist folder and commit generated files
+      run: |
+        cd _site
+        git init
+        git add -A
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m 'deploy'
+
+    - name: Force push to destination branch
+      uses: ad-m/github-push-action@v0.5.0
+      with:
+        # Token for the repo
+        # Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # Destination branch to push changes
+        branch: gh-pages
+        # Use force push to fully overwrite the destination branch
+        force: true
+        # We have to push from the folder where files were generated.
+        # Same were the new repo was initialized in the previous step
+        directory: ./_site

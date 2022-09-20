@@ -9,11 +9,11 @@ jobs:
     container: 
       image: docker.io/jekyll/minimal
     steps:
+    - run: apk add rsync
     - uses: actions/checkout@v3
     - run: chown 1000:1000 -R .
     - run: bundle install
     - run: jekyll build
-    - run: apk install rsync
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:

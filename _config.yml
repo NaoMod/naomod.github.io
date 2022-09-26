@@ -1,1 +1,6 @@
-exclude: [ README.md ]
+exclude: [ README.md, bundle, _site, site, _data, _layouts ]
+
+plugins:
+  - jekyll-ical-tag
+
+timezone: Europe/Paris

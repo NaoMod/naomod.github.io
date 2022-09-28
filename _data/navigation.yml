@@ -2,20 +2,20 @@
   url: /
 
 - text: Members
-  url: /members.html
+  url: /members
 
 - text: Publications
-  url: /publications.html
+  url: /publications
 
 - text: Projects
-  url: /projects.html
+  url: /projects
 
 - text: Openings
-  url: /openings.html
+  url: /openings
   
 - text: Software
   url: http://www.atlanmod.org
 
 - text: Weekly Seminar
-  url: /seminars.html
+  url: /seminars
 

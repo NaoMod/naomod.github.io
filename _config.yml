@@ -4,3 +4,5 @@ plugins:
   - jekyll-ical-tag
 
 timezone: Europe/Paris
+
+permalink: /:title

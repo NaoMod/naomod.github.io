@@ -1,0 +1,14 @@
+
+<div class="presentation">
+
+    <div class="left">
+      <div class="title">{{ include.data.summary }}</div> 
+      <div class="description">{{ include.data.description | markdownify }}</div> 
+    </div>
+  
+    <div class="right">
+      <div>{{ include.data.start_time | date: "%Y-%m-%d" }}</div>
+      <div class="author">{{include.data.location}}</div>
+    </div>
+  
+  </div>

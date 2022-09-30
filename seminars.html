@@ -6,59 +6,86 @@ title: Weekly Seminar
 
 <style>
   .presentation { 
-    font-size: 1.2rem; 
     margin-top: 1rem; 
-    margin-bottom: 1rem; 
+    margin-bottom: 1.5rem; 
   }
-  .title{
-    font-weight: bold;
+
+  .left {
     display: inline-block;
-    width: 160px;
+    vertical-align:middle;
+    width: 75%;
+    margin-right: 3%;
   }
-  .date {
+
+  .right {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 21%;
     color: #666;
-    margin-left: 1rem
   }
-  .description {
-    margin-left: 1rem;
+
+  .title{
+    font-size: 1.1rem; 
+    font-weight: bold;
   }
+
+  .author {
+    font-style : italic
+  }
+
   h2 {
     font-size: 2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.2rem;
   }
+
+  .description p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .archives {
+    text-align: right;
+    font-style: italic;
+  }
+
 </style>
 
 <h1> {{ page.title }} </h1>
 
-<p> All dates are shown in Central European Time (CET).</p>
 
-<p>This page is automatically generated from <a href="http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars">this ICS file</a>.</p>
+<!-- <h2>About</h2> -->
+
+<p>NaoMod hosts one seminar per week where group member or a guest speaker gives a talk on a subject of their choosing, such as an interesting paper, their ongoing work, a nice tool they discovered, or inspirational thoughts. </p>
+
+<p>This page is automatically generated from <a href="http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars">this ICS file</a> (<a href="https://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars.html
+  ">calendar view</a>).</p>
+
+<!-- <p>All dates are shown in Central European Time (CET).</p> -->
 
 
-
-
-<h2> Next seminars </h2>
+<h2> Upcoming seminars </h2>
 <hr/>
 
 {% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: false only_future: true %}
 
 
 <div class="presentation">
-  <div class="title">{{ event.summary }}</div> 
-  <span class="date">{{ event.start_time | date: "%Y-%m-%d − %H:%M" }}</span>
-</div>
 
-<div class="description">
-  {{ event.description | markdownify }}
-</div>
+  <div class="left">
+    <div class="title">{{ event.summary }}</div> 
+    <div class="description">{{ event.description | markdownify }}</div> 
+  </div>
 
+  <div class="right">
+    <div>{{ event.start_time | date: "%Y-%m-%d" }}</div>
+    <div class="author">{{event.location}}</div>
+  </div>
+
+</div>
 
 {% endical %}
-
-
-
-
 
 
 <h2> Past seminars </h2>
@@ -67,15 +94,20 @@ title: Weekly Seminar
 {% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: true only_past: true %}
 
 <div class="presentation">
-  <div class="title">{{ event.summary }}</div> 
-  <span class="date">{{ event.start_time | date: "%Y-%m-%d − %H:%M" }}</span>
-</div>
 
-<div class="description">
-  {{ event.description | markdownify }}
-</div>
+  <div class="left">
+    <div class="title">{{ event.summary }}</div> 
+    <div class="description">{{ event.description | markdownify }}</div> 
+  </div>
 
+  <div class="right">
+    <div>{{ event.start_time | date: "%Y-%m-%d" }}</div>
+    <div class="author">{{event.location}}</div>
+  </div>
+
+</div>
 
 {% endical %}
 
 
+<p class="archives"><a href="/seminars_2018-2019">Archives (07-2018 to 09-2019)</a></p>

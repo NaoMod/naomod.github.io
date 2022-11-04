@@ -38,33 +38,11 @@ openings:
     doc: doc/Internship_Naomod_2021.pdf
 
 ---
+<!------------------------------------------------------------------------------------------------------------------------->
 
 <style>
-  section { margin-top: 2.5rem; }
-  h3 { display: inline; }
-  .subtitle {
-    display: block;
-    margin: .25rem 0;
-    font-style: italic;
-  }
   .opening-type { color: #666; margin-left: 0.3rem; }
-  #past {
-    font-style: italic;
-    margin: 80px auto 0;
-    text-align: center;
-    width: 80%;
-  }
-  ul {
-    list-style-position: inside;
-    margin-top: -0.8rem;
-    margin-left: 1rem;
-  }
-  h1 {
-    font-size: 32px;
-  }
 </style>
-
-<!------------------------------------------------------------------------------------------------------------------------->
 
 {% for type in page.openingtype %}
 
@@ -75,7 +53,10 @@ openings:
 {% endfor %}
 
 {% if count >= 1 %}
-<h1>{{ type }}</h1>
+
+<h2> {{ type }} </h2>
+<hr/>
+
 {% for opening in page.openings %}
 {% if opening.type == type %}
 <section>

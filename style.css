@@ -15,6 +15,41 @@ main {
   padding: 0 .5rem;
 }
 
+main img {
+  display: block;
+  margin: 0 auto 2rem;
+  max-width: 90%;
+}
+
+/* Headers */
+h1 {
+  font-size: 3rem;
+  margin: 2rem 0 .5rem;
+}
+
+h2 {
+  font-size: 2rem; 
+  margin-top: 1.5rem; 
+  margin-bottom: 1.2rem;
+}
+
+h3 { display: inline; }
+
+h4 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 .25rem 0;
+  display: inline-block;
+}
+
+
+/* HTML5 */
+
+area {
+  cursor: initial;
+  display: block;
+}
+
 header {
   background-color: #7bbeff;
   color: #fafafa;
@@ -28,16 +63,6 @@ header {
 header a {
   color: #fafafa;
   text-decoration: none;
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 2rem 0 .5rem;
-}
-
-h2 {
-  font-size: 1.2rem;
-  margin: 0 0 2.5rem;
 }
 
 a {
@@ -55,9 +80,18 @@ footer a {
   text-decoration: none;
 }
 
+footer {
+  margin: 4rem auto 0;
+  text-align: center;
+}
+
 footer a:hover {
   border: none;
 }
+
+section { margin-top: 2.5rem; }
+
+/* MENU */
 
 #menu {
   line-height: 200%;
@@ -74,14 +108,14 @@ footer a:hover {
 }
 
 ul {
+  list-style-position: inside;
+  margin-top: -0.8rem;
+  margin-left: 1rem;
   padding: 0;
-}
-
-footer {
-  margin: 4rem auto 0;
-  text-align: center;
 }
 
 .logo {
   height: 10rem;
 }
+
+

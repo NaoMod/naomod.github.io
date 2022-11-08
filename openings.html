@@ -8,20 +8,13 @@ openingtype:
   - Post-doc
 
 openings:
-
-  - title: Event-driven API Orchestration Architecture
+  - title: Model-Driven Engineering for Reconfigurable Manufacturing Systems (RMS)
     type: Internship
-    duration: 6 months
-    employer: SALVIA Developpement, Aubervilliers (France)
-    tags: Web APIs, GUI, Enterprise Application Integration (EAI)
-    doc: doc/Internship_salvia.pdf
-
-  - title: Vers un modèle de référence pour l’alignement métier-IT
-    type: Internship
-    duration: 6 months
-    employer: Université de Nantes (France) and Obeo (France)
-    tags: Information Technology (IT), Business-IT Alignement (BITA)
-    doc: doc/Modele_reference_BITA.pdf
+    duration: 5 months
+    employer: Université de Nantes (France) and IUT Nantes (France)
+    tags: Java, Eclipse EMF (Ecore), Flexsim, DSLs, Automatisme, Manufacturing, MDE, Verification, Simulation
+    doc_en: doc/sujet-rodic-m2-2022-2023-english.pdf
+    doc_fr: doc/sujet-rodic-m2-2022-2023.pdf
 
 ---
 <!------------------------------------------------------------------------------------------------------------------------->
@@ -46,7 +39,23 @@ openings:
 {% for opening in page.openings %}
 {% if opening.type == type %}
 <section>
-  <h3><a href="{{ opening.doc }}"> {{ opening.title }} </a></h3>
+  <h3>
+    {% if opening.doc_en %}  
+    <a href="{{ opening.doc_en }}"> {{ opening.title }}</a>
+      {% if opening.doc_fr %}  
+      [<a href="{{ opening.doc_fr }}">FR</a>]
+      {% endif %}
+    {% else %}  
+      {% if opening.doc_fr %}  
+      <a href="{{ opening.doc_fr }}"> {{ opening.title }} </a>
+      {% else %}  
+      {% if opening.doc %}  
+        <a href="{{ opening.doc }}"> {{ opening.title }} </a>      
+      {% endif %}
+      {% endif %}
+    {% endif %}
+  
+  </h3>
   <span class="opening-type"> {{ opening.tags }} </span>
   <p>
     <ul>

@@ -8,11 +8,11 @@ We envision software development, integration, validation, deployment, and manag
 
 ## Team members
 
-- Gerson Sunyé (Head). Associate Professor HDR, University of Nantes.
+- Gerson Sunyé (Head). Associate Professor HDR, Nantes University.
 - Hugo Brunelière. Research Engineer, IMT Atlantique.
-- Jean-Marie Mottu. Associate Professor, University of Nantes.
+- Jean-Marie Mottu. Associate Professor, Nantes University.
 - Jean-Claude Royer. Professor, IMT Atlantique.
-- Dalila Tamzalit. Associate Professor, University of Nantes.
+- Dalila Tamzalit. Associate Professor, Nantes University.
 - Massimo Tisi. Associate Professor, IMT Atlantique.
 
 

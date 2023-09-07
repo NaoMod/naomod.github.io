@@ -1,0 +1,437 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:NaomodWeeklySeminars
+X-WR-CALID:be39204d-e62c-45a7-b01e-824484be1e73:1824284
+PRODID:Zimbra-Calendar-Provider
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:16010101T030000
+TZOFFSETTO:+0100
+TZOFFSETFROM:+0200
+RRULE:FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETTO:+0200
+TZOFFSETFROM:+0100
+RRULE:FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+
+BEGIN:VEVENT
+UID:1f5fad21-ef61-42a2-b534-d0f9c8a0a83a
+SUMMARY:Let us not put all our eggs in one basket
+DESCRIPTION:_Florence Maraninchi_\n\nIn « Communications of the ACM »\, Sept
+ ember 2022\n\n[Link to the paper](https://dl.acm.org/doi/10.1145/3528088)
+LOCATION:Erwan Bousse
+ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+DTSTART;TZID="Europe/Paris":20220926T133000
+DTEND;TZID="Europe/Paris":20220926T143000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220919T150544Z
+DTSTAMP:20220919T150544Z
+SEQUENCE:14
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:Reminder
+X-EVOLUTION-ALARM-UID:341a34fad549db0419e4d829236515c9f8179604
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:405fa038-5316-4365-9212-f107d4f9f70a
+SUMMARY:A feature-based survey of Fog modeling languages
+DESCRIPTION:_Abdelghani Alidraab\, Hugo Bruneliere\, Thomas Ledoux_\n\nIn « 
+ Future Generation Computer Systems »\, August 2022\n\n[Link to the paper](ht
+ tps://www.sciencedirect.com/science/article/pii/S0167739X22002710)
+LOCATION:Hugo Brunelière
+ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+DTSTART;TZID="Europe/Paris":20220912T133000
+DTEND;TZID="Europe/Paris":20220912T143000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T075333Z
+DTSTAMP:20220928T075333Z
+SEQUENCE:21
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:Reminder
+X-EVOLUTION-ALARM-UID:6bd0f683b3118afb2f6e3b8b8fdf19688271e61d
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:4121a3f248f78466e2f5bacb834f3557573c3b70
+SUMMARY:Code-First Model-Driven Engineering: On the Agile Adoption of MDE To
+ oling
+DESCRIPTION:_Artur Boronat_\n \nIn « ASE 2019 »\n\n[Link to the paper](https
+ ://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8952237)\n\n[Link to the sli
+ des](https://www.slideshare.net/aboronat/codefirst-modeldriven-engineeringon
+ -the-agile-adoption-of-mde)
+LOCATION:Massimo Tisi
+DTSTART;TZID="Europe/Paris":20221003T133000
+DTEND;TZID="Europe/Paris":20221003T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220919T095228Z
+DTSTAMP:20220919T095228Z
+SEQUENCE:14
+END:VEVENT
+
+BEGIN:VEVENT
+UID:f8b0d56551f1eae36f3fce395b482d0db01edbe1
+SUMMARY:Graph neural networks and how it relates with models
+DESCRIPTION:Current research work
+LOCATION:James Miranda
+DTSTART;TZID="Europe/Paris":20221107T133000
+DTEND;TZID="Europe/Paris":20221107T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220919T095228Z
+DTSTAMP:20220919T095228Z
+SEQUENCE:17
+END:VEVENT
+
+BEGIN:VEVENT
+UID:d47c1cc5140f20b109d119f037d397f8ec518453
+SUMMARY:Automatic Test Amplification for Executable Models
+DESCRIPTION:_Faezeh Khorram\, Erwan Bousse\, Jean-Marie Mottu\, Gerson Sunyé
+ \, Pablo Gómez-Abajo\, Pablo C Cañizares\, Esther Guerra\, Juan de Lara_\n\n
+ Rehearsal for presenting at [MODELS 2022](https://conf.researchr.org/home/mo
+ dels-2022)\n\n[Link to the paper](https://hal.archives-ouvertes.fr/hal-03745
+ 034)
+LOCATION:Faezeh Khorram
+DTSTART;TZID="Europe/Paris":20221017T133000
+DTEND;TZID="Europe/Paris":20221017T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220919T095228Z
+DTSTAMP:20220919T095228Z
+SEQUENCE:15
+END:VEVENT
+
+BEGIN:VEVENT
+UID:3e32ff9ba12c8f0327e03a453822152c3a0da01f
+SUMMARY:A Tool-Assisted Approach to Engineer Domain-Specific Languages (DSLs
+ ) using Rust
+DESCRIPTION:_Léo Olivier\, Lou-Anne Sauvêtre\, Erwan Bousse\, Gerson Sunyé_\
+ n\nRehearsal for presenting at « MLE 2022 »\n\n[Link to the paper](https://h
+ al.archives-ouvertes.fr/hal-03790527)
+LOCATION:Gerson Sunyé
+DTSTART;TZID="Europe/Paris":20221010T133000
+DTEND;TZID="Europe/Paris":20221010T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T114901Z
+DTSTAMP:20220928T114901Z
+SEQUENCE:16
+END:VEVENT
+
+BEGIN:VEVENT
+UID:46c2454a52f4e0fc19831d7f7238e417d13e11c4
+SUMMARY:From Coverage Computation to Fault Localization: A Generic Framework
+  for  Domain-Specific Languages
+DESCRIPTION:_Faezeh Khorram\, Erwan Bousse\, Antonio Garmendia\, Jean-Marie 
+ Mottu\, Gerson Sunyé\, Manuel Wimmer_\n\nRehearsal for presenting at [SLE 20
+ 22](https://2022.splashcon.org/home/sle-2022)\n\n[Link to the paper](https:/
+ /hal.archives-ouvertes.fr/hal-03815772/document)
+LOCATION:Faezeh Khorram
+DTSTART;TZID="Europe/Paris":20221128T133000
+DTEND;TZID="Europe/Paris":20221128T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T114951Z
+DTSTAMP:20220928T114951Z
+SEQUENCE:8
+END:VEVENT
+
+BEGIN:VEVENT
+UID:0583a47262c49fb0b4c4dbd88fc10382ae7d5f17
+SUMMARY:Current state on Business-IT alignment
+DESCRIPTION:Paper recently submitted at [CAiSE'23](https://caise23.svit.usj.
+ es/)
+LOCATION:Ali Benjilany
+DTSTART;TZID="Europe/Paris":20221205T133000
+DTEND;TZID="Europe/Paris":20221205T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T115027Z
+DTSTAMP:20220928T115027Z
+SEQUENCE:12
+END:VEVENT
+
+BEGIN:VEVENT
+UID:49fb8528bdf1fecb8d99b0011ba7eb65829be5f8
+SUMMARY:Towards Automating the Design of Cyber-Physical Systems: The Experie
+ nce of Volvo Construction Equipment
+DESCRIPTION:_Johan Bergelin\, Luca Berardinelli\, Damir Bilic\, Hugo Bruneli
+ ere\, Antonio Cicchetti\, MohammadHadi Dehghani\, Claudio Di Sipio\, James M
+ iranda\, Abbas Rahimi\, and Riccardo Rubei_\n\nSubmitted to [ECMFA 2023](htt
+ ps://conf.researchr.org/home/ecmfa-2023).
+LOCATION:Hugo Bruneliere
+DTSTART;TZID="Europe/Paris":20230306T133000
+DTEND;TZID="Europe/Paris":20230306T143000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T115103Z
+DTSTAMP:20220928T115103Z
+SEQUENCE:18
+END:VEVENT
+
+BEGIN:VEVENT
+UID:b6f8a4d260cc6c5cca35a03b9e57fa9621824d02
+SUMMARY:AI-augmented Model Transformations
+LOCATION:Matthew Coyle
+DTSTART;TZID="Europe/Paris":20230109T133000
+DTEND;TZID="Europe/Paris":20230109T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T115115Z
+DTSTAMP:20220928T115115Z
+SEQUENCE:7
+END:VEVENT
+
+BEGIN:VEVENT
+UID:1917b50cd0fe2ddad05b6fd593f83cace943fec0
+SUMMARY:A Generic Framework for Representing and Analysing Model Concurrency
+DESCRIPTION:Paper accepted in 01/2023 at [SoSym](https://sosym.org/)\n\n[Lin
+ k to paper](https://link.springer.com/article/10.1007/s10270-022-01073-2)
+LOCATION:Erwan Bousse
+DTSTART;TZID="Europe/Paris":20230116T133000
+DTEND;TZID="Europe/Paris":20230116T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T115137Z
+DTSTAMP:20220928T115137Z
+SEQUENCE:15
+END:VEVENT
+
+BEGIN:VEVENT
+UID:35fb1eefc54561a8491cc45fcfff2158c65cce4a
+SUMMARY:Protocol-Based Interactive Debugging for Domain-Specific Languages
+DESCRIPTION:WIP to be submitted to ECMFA 2023
+LOCATION:Josselin Enet
+DTSTART;TZID="Europe/Paris":20230213T133000
+DTEND;TZID="Europe/Paris":20230213T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T115148Z
+DTSTAMP:20220928T115148Z
+SEQUENCE:15
+END:VEVENT
+
+BEGIN:VEVENT
+UID:51a1118c992f482d580d8b05473d44173975e52b
+SUMMARY:Generating structurally realistic models with deep autoregressive ne
+ tworks
+DESCRIPTION:_Authors: José Antonio Hernández López\; Jesús Sánchez Cuadrado_
+ \n\n[Link to the paper](https://ieeexplore.ieee.org/document/9982379)
+LOCATION:Massimo Tisi
+DTSTART;TZID="Europe/Paris":20230417T133000
+DTEND;TZID="Europe/Paris":20230417T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T115224Z
+DTSTAMP:20220928T115224Z
+SEQUENCE:21
+END:VEVENT
+
+BEGIN:VEVENT
+UID:9ba6f991a78265ac0b0194ce726aa80b64bbedb3
+SUMMARY:Model-driven engineering for certifiable safety-critical systems
+DESCRIPTION:[Guest speaker from ÉTS Montréal](https://www.etsmtl.ca/recherch
+ e/professeurs-chercheurs/gelboussaidi/)\n\n
+LOCATION:Ghizlane El Boussaidi
+DTSTART;TZID="Europe/Paris":20230403T133000
+DTEND;TZID="Europe/Paris":20230403T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20220928T115248Z
+DTSTAMP:20220928T115248Z
+SEQUENCE:21
+END:VEVENT
+
+BEGIN:VEVENT
+UID:feb7bae8a5f5088affa3b1ee2f4e97254c990d91
+SUMMARY:TTC 2023 - Incremental MTL vs. GPLs: Class into Relational Database 
+ Schema
+DESCRIPTION:A quick focus on model transformation languages and general purp
+ ose languages expressiveness and ease of use in the context of incremental m
+ odel transformation.\n[Link to paper](https://www.transformation-tool-contes
+ t.eu/TTC_2023_paper_4.pdf) and [Github](https://github.com/ATL-Research/incr
+ emental-class2relational/)
+LOCATION:Théo Le Calvar
+DTSTART;TZID="Europe/Paris":20230515T133000
+DTEND;TZID="Europe/Paris":20230515T143000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20230509T133046Z
+DTSTAMP:20221121T063550Z
+SEQUENCE:8
+END:VEVENT
+
+BEGIN:VEVENT
+UID:c5c68d96a3bac47db1c9f97055a17d1fa068a6b9
+SUMMARY:Testing\, debugging and program visualisation @RMod
+DESCRIPTION:[Anne Etien](https://www.cristal.univ-lille.fr/profil/etien/) is
+  full professor in the [RMod group](https://rmod.gitlabpages.inria.fr/websit
+ e/) in Lille. She will give an  overview of some research activities in her 
+ group.
+LOCATION:Anne Etien
+DTSTART;TZID="Europe/Paris":20221212T103000
+DTEND;TZID="Europe/Paris":20221212T113000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20221208T100345Z
+DTSTAMP:20221208T100345Z
+SEQUENCE:10
+END:VEVENT
+
+BEGIN:VEVENT
+UID:4932b2035f3a9ca95406ecf4738c8406217d3ff8
+SUMMARY:Using Machine Learning to Build Test Oracles: an Industrial Case Stu
+ dy on Elevators Dispatching Algorithms
+DESCRIPTION:By _Aitor Arrieta\; Jon Ayerdi\; Miren Illarramendi\; Aitor Agir
+ re\; Goiuria Sagardui\; Maite Arratibel_.\n\n[Link to the paper](Using Machi
+ ne Learning to Build Test Oracles: an Industrial Case Study on Elevators Dis
+ patching Algorithms)
+LOCATION:Jean-Marie Mottu
+DTSTART;TZID="Europe/Paris":20230411T133000
+DTEND;TZID="Europe/Paris":20230411T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20230306T121858Z
+DTSTAMP:20230306T121858Z
+SEQUENCE:7
+END:VEVENT
+
+BEGIN:VEVENT
+UID:f9c00aef37e970636e4a27ce51c66d532b9173df
+SUMMARY:Hiba's thesis overview: "Performance Evaluation of Executable Domain
+ -Specific Languages"
+DESCRIPTION:A brief introduction to Hiba's thesis subject entitled Performan
+ ce Evaluation of Executable Domain-Specific Languages: introduction of  an o
+ verall architectural diagram of the RODIC ANR project\, and of a technical d
+ iagram on the WP2 level\, and presentation of some of results.
+LOCATION:Hiba Ajabri
+DTSTART;TZID="Europe/Paris":20230424T133000
+DTEND;TZID="Europe/Paris":20230424T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20230515T072146Z
+DTSTAMP:20230308T073148Z
+SEQUENCE:7
+END:VEVENT
+
+BEGIN:VEVENT
+UID:085a6edc2da812abc155d9e75d091ffe68678b42
+SUMMARY:Being sustainability chair of ICTS 2023
+DESCRIPTION:A few words about the [ICT4S 2023](https://conf.researchr.org/ho
+ me/ict4s-2023) conference and my job there as "sustainability chair"
+LOCATION:Erwan Bousse
+DTSTART;TZID="Europe/Paris":20230509T133000
+DTEND;TZID="Europe/Paris":20230509T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20230509T111528Z
+DTSTAMP:20230308T073251Z
+SEQUENCE:7
+END:VEVENT
+
+BEGIN:VEVENT
+UID:afe31a2810534c6d9617ca8060aa4928c02f4f76
+SUMMARY:TBA
+LOCATION:Gerson Sunyé
+DTSTART;TZID="Europe/Paris":20230619T133000
+DTEND;TZID="Europe/Paris":20230619T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20230308T073821Z
+DTSTAMP:20230308T073821Z
+SEQUENCE:4
+END:VEVENT
+
+BEGIN:VEVENT
+UID:eb68abdfaf38252c6df3b8205064c2adc9b51d1c
+SUMMARY:TBA
+LOCATION:Matthew Coyle
+DTSTART;TZID="Europe/Paris":20230626T133000
+DTEND;TZID="Europe/Paris":20230626T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20230308T073842Z
+DTSTAMP:20230308T073842Z
+SEQUENCE:4
+END:VEVENT
+
+BEGIN:VEVENT
+UID:1d0c07e9e330790ec29f35b24120317ad155b027
+SUMMARY:SeMaFoR & Concerto-D for decentralized reconfiguration of Fog system
+ s
+DESCRIPTION:_Abstract_: The new Fog paradigm extends the Cloud to be closer 
+ to the thing that produce and act on IoT data. However\, managing Fog infras
+ tructure is challenging because of the scalability and reliability of these 
+ heterogeneous and dynamic systems. The SeMaFoR project aims at model Fog res
+ ources\, and orchestrate a fleet of autonomous controllers\, each having a l
+ ocal view of its resources\, to ease the management of Fog systems.
+LOCATION:Jolan Philippe
+DTSTART;TZID="Europe/Paris":20230703T133000
+DTEND;TZID="Europe/Paris":20230703T140000
+STATUS:CONFIRMED
+CLASS:PUBLIC
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+TRANSP:OPAQUE
+LAST-MODIFIED:20230613T114634Z
+DTSTAMP:20230612T131226Z
+SEQUENCE:7
+END:VEVENT
+END:VCALENDAR

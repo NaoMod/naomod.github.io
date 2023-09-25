@@ -7,8 +7,8 @@ def YamlHead(data):
     out = ""
     out += "---\nlayout : null\n"
     for key,value in data.items():
-        string = cleanstring(value)
-        out +=  "{} : {}\n".format(key,string)
+        string = str(value).replace('"','\"').replace("'","\'")
+        out +=  "{} : \"{}\"\n".format(key,string)
     out+="---\n"
     return out
 
@@ -48,7 +48,7 @@ def extractfilename(decoded_datetime,title):
     out = ""
     xdate = datetime2stringdict(decoded_datetime)
     out += "{}-{}-{}".format(xdate["year"],xdate["month"],xdate["day"])
-    for word in cleanstring(title).replace("-","").replace(",","").split():
+    for word in str(title).replace('"', '').replace("'","").replace(":","").replace("\n"," ").replace("-","").replace(",","").strip().split():
         out += "-{}".format(word)
     
     print(out)
@@ -60,12 +60,15 @@ def extractdata(event):
     out = {}
     out["filename"] = extractfilename(event.decoded("dtstart"), event.get("summary"))
     
-    out["yamlhead"] = {"title":event.get("summary")}
+
+    out["yamlhead"] = {}
+    out["yamlhead"].update({"title":event.get("summary")})
     # out["yamlhead"].update(datetime2stringdict(event.decoded("dtstart"))) #removed because we should be able to use jekyll to query
     
-    out["yamlhead"] = {"speaker":event.get("location")}
-    out["yamlhead"] = {"location":"na-b218"} #default location
-
+    out["yamlhead"].update({"speaker":event.get("location")})
+    out["yamlhead"].update({"location":"na-b218"}) #default location
+    out["yamlhead"].update({"start":1330})
+    out["yamlhead"].update({"end":1400})
     #Get fields from ICS and similarly assign "field name : field value" in yaml header
     # for var in ["location","summary","description"]: #location moved to speaker field
     for var in ["summary","description"]:

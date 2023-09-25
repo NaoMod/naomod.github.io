@@ -33,12 +33,12 @@ BEGIN:VEVENT
 
 UID:{{ post.date | date: "%Y%m%d" }}@naomod.github.io
 ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
-LOCATION:{{ post.location }}
-SUMMARY:{{ post.summary }}
-DESCRIPTION:{{ post.description}}
+LOCATION:"{{ post.location }}"
+SUMMARY:"{{ post.summary }}"
+DESCRIPTION:"{{ post.description}}"
 CLASS:PUBLIC
-DTSTART:{{ post.date | date: "%Y%m%d" }}T133000Z
-DTEND:{{ post.date | date: "%Y%m%d" }}T140000Z
+DTSTART:{{ post.date | date: "%Y%m%d" }}T{{post.start}}00Z
+DTEND:{{ post.date | date: "%Y%m%d" }}T{{post.end}}00Z
 DTSTAMP:16010101T020000Z
 
 END:VEVENT

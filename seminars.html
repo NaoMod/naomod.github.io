@@ -90,52 +90,18 @@ title: Weekly Seminar
 
 <h2> Past seminars </h2>
 <hr/>
-{% for post in site.posts%}
+{% for cat in site.categories%}
+{% if cat[0] == "seminars" %} {% for post in cat[1] %}
+
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
   {% if posttime < nowunix %}
     {% include seminar_presentation.html %}
   {% endif%}
-{% endfor %}
 
+{% endfor %} {% endif %}
+{% endfor %} 
 
-<!-- {% assign counter = 0 %}
-{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: false only_future: true %}
-{% assign counter = counter | plus: 1 %}
-{% if counter < 4 %}
-
-{% include seminar_presentation.html data=event %}
-
-{% endif %}
-{% endical %} -->
-
-
-<!-- <details>
-
-<summary>Click here to see more upcoming seminars</summary>
-
-{% assign counter = 0 %}
-{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: false only_future: true %}
-{% assign counter = counter | plus: 1 %}
-{% if counter >= 4 %}
-
-{% include seminar_presentation.html data=event %}
-
-{% endif %}
-{% endical %}
-
-</details>
-
-
-
-<h2> Past seminars </h2>
-<hr/>
-
-{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: true only_past: true %}
-
-{% include seminar_presentation.html data=event %}
-
-{% endical %} -->
 
 
 <p class="archives"><a href="/seminars_2018-2019">Archives (07-2018 to 09-2019)</a></p>

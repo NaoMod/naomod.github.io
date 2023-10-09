@@ -28,19 +28,21 @@ TZNAME:CEST
 END:DAYLIGHT
 END:VTIMEZONE
 
-{% for post in site.posts %}
+{% for cat in site.categories%}
+{% if cat[0] == "seminars" %} {% for post in cat[1] %}
 BEGIN:VEVENT
 
 UID:{{ post.date | date: "%Y%m%d" }}@naomod.github.io
 ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
-LOCATION:"{{ post.location }}"
+LOCATION:{{ post.location }}
 SUMMARY:"{{ post.summary }}"
-DESCRIPTION:"{{ post.description}}"
+DESCRIPTION:"{{ post.description | strip }}"
 CLASS:PUBLIC
 DTSTART:{{ post.date | date: "%Y%m%d" }}T{{post.start}}00Z
 DTEND:{{ post.date | date: "%Y%m%d" }}T{{post.end}}00Z
 DTSTAMP:16010101T020000Z
 
 END:VEVENT
+{% endfor %} {% endif %}
 {% endfor %}
 END:VCALENDAR

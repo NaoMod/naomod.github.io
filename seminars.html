@@ -91,7 +91,7 @@ title: Weekly Seminar
 <h2> Past seminars </h2>
 <hr/>
 {% for cat in site.categories%}
-{% if cat[0] == "seminars" %} {% for post in cat[1] %}
+{% if cat[0] == "seminar" %} {% for post in cat[1] %}
 
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}

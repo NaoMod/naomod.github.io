@@ -71,7 +71,7 @@ def extractdata(event):
     out["yamlhead"].update({"end":1400})
     #Get fields from ICS and similarly assign "field name : field value" in yaml header
     # for var in ["location","summary","description"]: #location moved to speaker field
-    for var in ["summary","description"]:
+    for var in ["description"]:
         out["yamlhead"].update({var : event.get(var)})
 
     out["body"] = event.get("description")

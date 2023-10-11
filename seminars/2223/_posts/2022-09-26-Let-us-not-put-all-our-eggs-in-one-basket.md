@@ -5,7 +5,6 @@ speaker : "Erwan Bousse"
 location : "na-b218"
 start : "1330"
 end : "1400"
-summary : "Let us not put all our eggs in one basket"
 description : "_Florence Maraninchi_
 
 In « Communications of the ACM », September 2022

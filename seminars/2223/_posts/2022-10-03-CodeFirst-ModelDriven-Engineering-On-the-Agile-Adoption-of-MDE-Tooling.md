@@ -5,7 +5,6 @@ speaker : "Massimo Tisi"
 location : "na-b218"
 start : "1330"
 end : "1400"
-summary : "Code-First Model-Driven Engineering: On the Agile Adoption of MDE Tooling"
 description : "_Artur Boronat_
  
 In « ASE 2019 »

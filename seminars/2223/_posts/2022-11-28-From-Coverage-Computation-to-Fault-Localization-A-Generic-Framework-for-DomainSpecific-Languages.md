@@ -5,7 +5,6 @@ speaker : "Faezeh Khorram"
 location : "na-b218"
 start : "1330"
 end : "1400"
-summary : "From Coverage Computation to Fault Localization: A Generic Framework for  Domain-Specific Languages"
 description : "_Faezeh Khorram, Erwan Bousse, Antonio Garmendia, Jean-Marie Mottu, Gerson Sunyé, Manuel Wimmer_
 
 Rehearsal for presenting at [SLE 2022](https://2022.splashcon.org/home/sle-2022)

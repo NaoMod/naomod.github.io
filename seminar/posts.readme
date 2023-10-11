@@ -5,7 +5,7 @@ the YAML header fields required to generate a .md:
 From the .mds two pages are generated, but require extra yaml fields:
 the following header field and the rest of the document beyond the YAML header are used to generate the seminar_presentation.html included in seminar.html:
 - speaker
-- content <- a body of text, beneath the YAML head
+- content (converted to html) <- a body of text, beneath the YAML head
 
 the following header fields are used to generate the ics:
 - location
@@ -13,18 +13,14 @@ the following header fields are used to generate the ics:
 - end
 - description <- normally would use post.content but it returns html version (strip_html removes links), this helps keep a copy of the markdown
 
-
+for example:
 ---
 layout : null
-title : "A feature-based survey of Fog modeling languages"
-speaker : "Hugo Brunelière"
+title : "Being sustainability chair of ICTS 2023"
+speaker : "Erwan Bousse"
 location : "na-b218"
 start : "1330"
 end : "1400"
-summary : "A feature-based survey of Fog modeling languages"
-description : "_Abdelghani Alidraab, Hugo Bruneliere, Thomas Ledoux_
-
-In « Future Generation Computer Systems », August 2022
-
-[Link to the paper](https://www.sciencedirect.com/science/article/pii/S0167739X22002710)"
+description : "A few words about the [ICT4S 2023](https://conf.researchr.org/home/ict4s-2023) conference and my job there as 'sustainability chair'"
 ---
+A few words about the [ICT4S 2023](https://conf.researchr.org/home/ict4s-2023) conference and my job there as "sustainability chair"

@@ -7,7 +7,7 @@ def YamlHead(data):
     out = ""
     out += "---\nlayout : null\n"
     for key,value in data.items():
-        string = str(value).replace('"','\"').replace("'","\'")
+        string = str(value).replace('"','\'').replace("'","\'")
         out +=  "{} : \"{}\"\n".format(key,string)
     out+="---\n"
     return out

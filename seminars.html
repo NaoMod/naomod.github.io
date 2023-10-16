@@ -52,50 +52,54 @@ title: Weekly Seminar
 
 <p>NaoMod hosts one seminar per week where group member or a guest speaker gives a talk on a subject of their choosing, such as an interesting paper, their ongoing work, a nice tool they discovered, or inspirational thoughts. </p>
 
-<p>This page is automatically generated from <a href="http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars">this ICS file</a> (<a href="https://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars.html
-  ">calendar view</a>).</p>
+<!-- <p>This page is automatically generated from <a href="http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars">this ICS file</a> (<a href="https://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars.html
+  ">calendar view</a>).</p> -->
 
+<p>New ics link: {{site.url}}/naomodWeekly.ics <a href="{{site.baseurl}}/naomodWeekly.ics">Download ICS</a></p>
 
 <h2> Upcoming seminars </h2>
 <hr/>
 
 {% assign counter = 0 %}
-{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: false only_future: true %}
-{% assign counter = counter | plus: 1 %}
-{% if counter < 4 %}
+{% for post in site.posts%}
+  {% if counter > 4 %} {% break %} {% endif%}
 
-{% include seminar_presentation.html data=event %}
+  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+  {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+  {% if posttime > nowunix %}
+    {% include seminar_presentation.html %}
+    {% assign counter = counter | plus: 1 %}
+  {% endif%}
+{% endfor %}
 
-{% endif %}
-{% endical %}
-
-
-<details>
-
-<summary>Click here to see more upcoming seminars</summary>
-
+<details> <summary>Click here to see more upcoming seminars</summary>
+  
 {% assign counter = 0 %}
-{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: false only_future: true %}
-{% assign counter = counter | plus: 1 %}
-{% if counter >= 4 %}
+{% for post in site.posts%}
+  {% if counter < 4 %} {% continue %} {% endif%}
 
-{% include seminar_presentation.html data=event %}
-
-{% endif %}
-{% endical %}
-
+  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+  {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+  {% if posttime > nowunix %}
+    {% include seminar_presentation.html %}
+    {% assign counter = counter | plus: 1 %}
+  {% endif%}
+{% endfor %}
+  
 </details>
-
-
 
 <h2> Past seminars </h2>
 <hr/>
+{% for cat in site.categories%}
+{% if cat[0] == "seminar" %} {% for post in cat[1] %}
 
-{% ical url: http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars reverse: true only_past: true %}
+  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+  {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+  {% if posttime < nowunix %}
+    {% include seminar_presentation.html %}
+  {% endif%}
 
-{% include seminar_presentation.html data=event %}
-
-{% endical %}
-
+{% endfor %} {% endif %}
+{% endfor %} 
 
 <p class="archives"><a href="/seminars_2018-2019">Archives (07-2018 to 09-2019)</a></p>

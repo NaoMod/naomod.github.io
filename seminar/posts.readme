@@ -1,0 +1,26 @@
+the YAML header fields required to generate a .md:
+- layout : null (minimum to be parsed by Jekyll)
+- title : "string" (standard jekyll var for a page)
+
+From the .mds two pages are generated, but require extra yaml fields:
+the following header field and the rest of the document beyond the YAML header are used to generate the seminar_presentation.html included in seminar.html:
+- speaker
+- content (converted to html) <- a body of text, beneath the YAML head
+
+the following header fields are used to generate the ics:
+- location
+- start
+- end
+- description <- normally would use post.content but it returns html version (strip_html removes links), this helps keep a copy of the markdown
+
+for example:
+---
+layout : null
+title : "Being sustainability chair of ICTS 2023"
+speaker : "Erwan Bousse"
+location : "na-b218"
+start : "1330"
+end : "1400"
+description : "A few words about the [ICT4S 2023](https://conf.researchr.org/home/ict4s-2023) conference and my job there as 'sustainability chair'"
+---
+A few words about the [ICT4S 2023](https://conf.researchr.org/home/ict4s-2023) conference and my job there as "sustainability chair"

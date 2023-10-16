@@ -1,7 +1,5 @@
 BEGIN:VCALENDAR
-X-WR-CALNAME:NaomodWeeklySeminars
-X-WR-CALID:be39204d-e62c-45a7-b01e-824484be1e73:1824284
-PRODID:Zimbra-Calendar-Provider
+X-WR-CALNAME:Naomod weekly seminars
 VERSION:2.0
 METHOD:PUBLISH
 
@@ -30,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 
 UID:20230703@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:SeMaFoR & Concerto-D for decentralized reconfiguration of Fog systems
 DESCRIPTION:_Abstract_: The new Fog paradigm extends the Cloud to be closer to the thing that produce and act on IoT data. However, managing Fog infrastructure is challenging because of the scalability and reliability of these heterogeneous and dynamic systems. The SeMaFoR project aims at model Fog resources, and orchestrate a fleet of autonomous controllers, each having a local view of its resources, to ease the management of Fog systems.
@@ -44,7 +42,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230626@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:No title provided.
 DESCRIPTION:None
@@ -58,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230619@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:No title provided.
 DESCRIPTION:None
@@ -72,7 +70,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230515@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:TTC 2023 - Incremental MTL vs. GPLs: Class into Relational Database Schema
 DESCRIPTION:A quick focus on model transformation languages and general purpose languages expressiveness and ease of use in the context of incremental model transformation. [Link to paper](https://www.transformation-tool-contest.eu/TTC_2023_paper_4.pdf) and [Github](https://github.com/ATL-Research/incremental-class2relational/)
@@ -86,7 +84,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230509@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Being sustainability chair of ICTS 2023
 DESCRIPTION:A few words about the [ICT4S 2023](https://conf.researchr.org/home/ict4s-2023) conference and my job there as 'sustainability chair'
@@ -100,7 +98,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230424@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Hiba's thesis overview: 'Performance Evaluation of Executable Domain-Specific Languages'
 DESCRIPTION:A brief introduction to Hiba's thesis subject entitled Performance Evaluation of Executable Domain-Specific Languages: introduction of an overall architectural diagram of the RODIC ANR project, and of a technical diagram on the WP2 level, and presentation of some of results.
@@ -114,7 +112,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230417@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Generating structurally realistic models with deep autoregressive networks
 DESCRIPTION:_Authors: José Antonio Hernández López; Jesús Sánchez Cuadrado_ [Link to the paper](https://ieeexplore.ieee.org/document/9982379)
@@ -128,7 +126,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230411@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Using Machine Learning to Build Test Oracles: an Industrial Case Study on Elevators Dispatching Algorithms
 DESCRIPTION:By _Aitor Arrieta; Jon Ayerdi; Miren Illarramendi; Aitor Agirre; Goiuria Sagardui; Maite Arratibel_. [Link to the paper](Using Machine Learning to Build Test Oracles: an Industrial Case Study on Elevators Dispatching Algorithms)
@@ -142,7 +140,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230403@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Model-driven engineering for certifiable safety-critical systems
 DESCRIPTION:[Guest speaker from ÉTS Montréal](https://www.etsmtl.ca/recherche/professeurs-chercheurs/gelboussaidi/)
@@ -156,7 +154,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230306@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Towards Automating the Design of Cyber-Physical Systems: The Experience of Volvo Construction Equipment
 DESCRIPTION:_Johan Bergelin, Luca Berardinelli, Damir Bilic, Hugo Bruneliere, Antonio Cicchetti, MohammadHadi Dehghani, Claudio Di Sipio, James Miranda, Abbas Rahimi, and Riccardo Rubei_ Submitted to [ECMFA 2023](https://conf.researchr.org/home/ecmfa-2023).
@@ -170,7 +168,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230213@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Protocol-Based Interactive Debugging for Domain-Specific Languages
 DESCRIPTION:WIP to be submitted to ECMFA 2023
@@ -184,7 +182,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230116@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:A Generic Framework for Representing and Analysing Model Concurrency
 DESCRIPTION:Paper accepted in 01/2023 at [SoSym](https://sosym.org/) [Link to paper](https://link.springer.com/article/10.1007/s10270-022-01073-2)
@@ -198,7 +196,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20230109@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:AI-augmented Model Transformations
 DESCRIPTION:None
@@ -212,7 +210,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20221212@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Testing, debugging and program visualisation @RMod
 DESCRIPTION:[Anne Etien](https://www.cristal.univ-lille.fr/profil/etien/) is full professor in the [RMod group](https://rmod.gitlabpages.inria.fr/website/) in Lille. She will give an overview of some research activities in her group.
@@ -226,7 +224,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20221205@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Current state on Business-IT alignment
 DESCRIPTION:Paper recently submitted at [CAiSE'23](https://caise23.svit.usj.es/)
@@ -240,7 +238,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20221128@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:From Coverage Computation to Fault Localization: A Generic Framework for  Domain-Specific Languages
 DESCRIPTION:_Faezeh Khorram, Erwan Bousse, Antonio Garmendia, Jean-Marie Mottu, Gerson Sunyé, Manuel Wimmer_ Rehearsal for presenting at [SLE 2022](https://2022.splashcon.org/home/sle-2022) [Link to the paper](https://hal.archives-ouvertes.fr/hal-03815772/document)
@@ -254,7 +252,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20221107@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Graph neural networks and how it relates with models
 DESCRIPTION:Current research work
@@ -268,7 +266,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20221017@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Automatic Test Amplification for Executable Models
 DESCRIPTION:_Faezeh Khorram, Erwan Bousse, Jean-Marie Mottu, Gerson Sunyé, Pablo Gómez-Abajo, Pablo C Cañizares, Esther Guerra, Juan de Lara_ Rehearsal for presenting at [MODELS 2022](https://conf.researchr.org/home/models-2022) [Link to the paper](https://hal.archives-ouvertes.fr/hal-03745034)
@@ -282,7 +280,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20221010@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:A Tool-Assisted Approach to Engineer Domain-Specific Languages (DSLs) using Rust
 DESCRIPTION:_Léo Olivier, Lou-Anne Sauvêtre, Erwan Bousse, Gerson Sunyé_ Rehearsal for presenting at « MLE 2022 » [Link to the paper](https://hal.archives-ouvertes.fr/hal-03790527)
@@ -296,7 +294,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20221003@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Code-First Model-Driven Engineering: On the Agile Adoption of MDE Tooling
 DESCRIPTION:_Artur Boronat_ In « ASE 2019 » [Link to the paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8952237) [Link to the slides](https://www.slideshare.net/aboronat/codefirst-modeldriven-engineeringon-the-agile-adoption-of-mde)
@@ -310,7 +308,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20220926@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:Let us not put all our eggs in one basket
 DESCRIPTION:_Florence Maraninchi_ In « Communications of the ACM », September 2022 [Link to the paper](https://dl.acm.org/doi/10.1145/3528088)
@@ -324,7 +322,7 @@ END:VEVENT
 BEGIN:VEVENT
 
 UID:20220912@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:na-b218
 SUMMARY:A feature-based survey of Fog modeling languages
 DESCRIPTION:_Abdelghani Alidraab, Hugo Bruneliere, Thomas Ledoux_ In « Future Generation Computer Systems », August 2022 [Link to the paper](https://www.sciencedirect.com/science/article/pii/S0167739X22002710)

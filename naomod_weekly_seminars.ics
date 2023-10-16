@@ -2,9 +2,7 @@
 layout: null
 ---
 BEGIN:VCALENDAR
-X-WR-CALNAME:NaomodWeeklySeminars
-X-WR-CALID:be39204d-e62c-45a7-b01e-824484be1e73:1824284
-PRODID:Zimbra-Calendar-Provider
+X-WR-CALNAME:Naomod weekly seminars
 VERSION:2.0
 METHOD:PUBLISH
 
@@ -33,7 +31,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 
 UID:{{ post.date | date: "%Y%m%d" }}@naomod.github.io
-ORGANIZER;CN=Erwan BOUSSE:mailto:bousse-e@univ-nantes.fr
+ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:{{ post.location }}
 SUMMARY:{{ post.title }}
 DESCRIPTION:{{ post.description | normalize_whitespace | strip }}

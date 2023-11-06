@@ -46,7 +46,7 @@ random.shuffle(speakers)
 # Preparations
 ############
 output_dir.mkdir(parents=True, exist_ok=True)
-example_file: Path = Path("./seminar/example.md")
+example_file: Path = Path("./seminar/talk_template.md")
 if not example_file.exists():
     raise "Missing example file at location " + str(example_file)
 

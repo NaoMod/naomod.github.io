@@ -61,7 +61,7 @@ title: Weekly Seminar
 <hr/>
 
 {% assign counter = 0 %}
-{% for post in site.posts%}
+{% for post in site.posts reversed %}
   {% if counter > 4 %} {% break %} {% endif%}
 
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
@@ -75,15 +75,16 @@ title: Weekly Seminar
 <details> <summary>Click here to see more upcoming seminars</summary>
   
 {% assign counter = 0 %}
-{% for post in site.posts%}
-  {% if counter < 4 %} {% continue %} {% endif%}
-
+{% for post in site.posts reversed%}
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
   {% if posttime > nowunix %}
-    {% include seminar_presentation.html %}
-    {% assign counter = counter | plus: 1 %}
+      {% if counter > 4 %}
+        {% include seminar_presentation.html %}
+      {% endif%}
+      {% assign counter = counter | plus: 1 %}
   {% endif%}
+  
 {% endfor %}
   
 </details>

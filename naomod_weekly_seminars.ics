@@ -32,7 +32,7 @@ BEGIN:VEVENT
 
 UID:{{ post.date | date: "%Y%m%d" }}@naomod.github.io
 ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
-LOCATION:{{ post.location }}
+LOCATION: See room reservation calendar.
 SUMMARY:{{ post.title }}
 DESCRIPTION:{{ post.content | normalize_whitespace | strip }}
 CLASS:PUBLIC

@@ -6,3 +6,5 @@ plugins:
 timezone: Europe/Paris
 
 permalink: /:title
+
+future: true

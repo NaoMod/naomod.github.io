@@ -34,7 +34,7 @@ UID:{{ post.date | date: "%Y%m%d" }}@naomod.github.io
 ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION:{{ post.location }}
 SUMMARY:{{ post.title }}
-DESCRIPTION:{{ post.description | normalize_whitespace | strip }}
+DESCRIPTION:{{ post.content | normalize_whitespace | strip }}
 CLASS:PUBLIC
 DTSTART:{{ post.date | date: "%Y%m%d" }}T{{post.start}}00Z
 DTEND:{{ post.date | date: "%Y%m%d" }}T{{post.end}}00Z

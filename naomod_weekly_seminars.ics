@@ -5,6 +5,7 @@ BEGIN:VCALENDAR
 X-WR-CALNAME:Naomod weekly seminars
 VERSION:2.0
 METHOD:PUBLISH
+PRODID: Generated with Naomod website
 
 BEGIN:VTIMEZONE
 TZID:Europe/Paris
@@ -38,7 +39,8 @@ DESCRIPTION:Speaker: {{ post.speaker }}.\n\n{{ post.content | normalize_whitespa
 CLASS:PUBLIC
 DTSTART:{{ post.date | date: "%Y%m%d" }}T{{post.start}}00Z
 DTEND:{{ post.date | date: "%Y%m%d" }}T{{post.end}}00Z
-DTSTAMP:16010101T020000Z
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%S" }}Z
+LAST-MODIFIED:{{ site.time | date: "%Y%m%dT%H%M%S" }}Z
 
 END:VEVENT
 {% endfor %} {% endif %}

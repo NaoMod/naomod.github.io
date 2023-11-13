@@ -37,10 +37,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:{{ post.title }}
 DESCRIPTION:Speaker: {{ post.speaker }}.\n\n{{ post.content | normalize_whitespace | strip }}
 CLASS:PUBLIC
-DTSTART:{{ post.date | date: "%Y%m%d" }}T{{post.start}}00Z
-DTEND:{{ post.date | date: "%Y%m%d" }}T{{post.end}}00Z
-DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%S" }}Z
-LAST-MODIFIED:{{ site.time | date: "%Y%m%dT%H%M%S" }}Z
+DTSTART;TZID=Europe/Paris:{{ post.date | date: "%Y%m%d" }}T{{post.start}}00
+DTEND;TZID=Europe/Paris:{{ post.date | date: "%Y%m%d" }}T{{post.end}}00
+DTSTAMP;TZID=Europe/Paris:{{ site.time | date: "%Y%m%dT%H%M%S" }}
+LAST-MODIFIED;TZID=Europe/Paris:{{ site.time | date: "%Y%m%dT%H%M%S" }}
 
 END:VEVENT
 {% endfor %} {% endif %}

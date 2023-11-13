@@ -2,6 +2,7 @@ BEGIN:VCALENDAR
 X-WR-CALNAME:Naomod weekly seminars
 VERSION:2.0
 METHOD:PUBLISH
+PRODID: Generated with Naomod website
 
 BEGIN:VTIMEZONE
 TZID:Europe/Paris
@@ -33,9 +34,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Dalila Tamzalit.\n\n
 CLASS:PUBLIC
-DTSTART:20240226T093000Z
-DTEND:20240226T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240226T093000
+DTEND;TZID=Europe/Paris:20240226T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -47,9 +49,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Théo Le Calvar.\n\n
 CLASS:PUBLIC
-DTSTART:20240219T093000Z
-DTEND:20240219T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240219T093000
+DTEND;TZID=Europe/Paris:20240219T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -61,9 +64,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Josselin Enet.\n\n
 CLASS:PUBLIC
-DTSTART:20240212T093000Z
-DTEND:20240212T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240212T093000
+DTEND;TZID=Europe/Paris:20240212T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -75,9 +79,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Massimo Tisi.\n\n
 CLASS:PUBLIC
-DTSTART:20240205T093000Z
-DTEND:20240205T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240205T093000
+DTEND;TZID=Europe/Paris:20240205T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -89,9 +94,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Yasmina Daliyoucef.\n\n
 CLASS:PUBLIC
-DTSTART:20240129T093000Z
-DTEND:20240129T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240129T093000
+DTEND;TZID=Europe/Paris:20240129T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -103,9 +109,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Hugo Bruneliere.\n\n
 CLASS:PUBLIC
-DTSTART:20240122T093000Z
-DTEND:20240122T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240122T093000
+DTEND;TZID=Europe/Paris:20240122T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -117,9 +124,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: James Miranda.\n\n
 CLASS:PUBLIC
-DTSTART:20240115T093000Z
-DTEND:20240115T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240115T093000
+DTEND;TZID=Europe/Paris:20240115T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -131,9 +139,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Hiba Ajabri.\n\n
 CLASS:PUBLIC
-DTSTART:20240108T093000Z
-DTEND:20240108T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20240108T093000
+DTEND;TZID=Europe/Paris:20240108T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -145,9 +154,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Jean-Marie Mottu.\n\n
 CLASS:PUBLIC
-DTSTART:20231218T093000Z
-DTEND:20231218T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20231218T093000
+DTEND;TZID=Europe/Paris:20231218T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -159,9 +169,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Gerson Sunyé.\n\n
 CLASS:PUBLIC
-DTSTART:20231211T093000Z
-DTEND:20231211T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20231211T093000
+DTEND;TZID=Europe/Paris:20231211T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -173,9 +184,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Erwan Bousse.\n\n
 CLASS:PUBLIC
-DTSTART:20231204T093000Z
-DTEND:20231204T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20231204T093000
+DTEND;TZID=Europe/Paris:20231204T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -187,9 +199,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Ali Benjilany.\n\n
 CLASS:PUBLIC
-DTSTART:20231127T093000Z
-DTEND:20231127T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20231127T093000
+DTEND;TZID=Europe/Paris:20231127T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -201,9 +214,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TBA
 DESCRIPTION:Speaker: Matthew Coyle.\n\n
 CLASS:PUBLIC
-DTSTART:20231120T093000Z
-DTEND:20231120T100000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20231120T093000
+DTEND;TZID=Europe/Paris:20231120T100000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -215,9 +229,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:SeMaFoR & Concerto-D for decentralized reconfiguration of Fog systems
 DESCRIPTION:Speaker: Jolan Philippe.\n\n<p><em>Abstract</em>: The new Fog paradigm extends the Cloud to be closer to the thing that produce and act on IoT data. However, managing Fog infrastructure is challenging because of the scalability and reliability of these heterogeneous and dynamic systems. The SeMaFoR project aims at model Fog resources, and orchestrate a fleet of autonomous controllers, each having a local view of its resources, to ease the management of Fog systems.</p>
 CLASS:PUBLIC
-DTSTART:20230703T133000Z
-DTEND:20230703T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230703T133000
+DTEND;TZID=Europe/Paris:20230703T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -229,9 +244,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:No title provided.
 DESCRIPTION:Speaker: Matthew Coyle.\n\n
 CLASS:PUBLIC
-DTSTART:20230626T133000Z
-DTEND:20230626T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230626T133000
+DTEND;TZID=Europe/Paris:20230626T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -243,9 +259,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:No title provided.
 DESCRIPTION:Speaker: Gerson Sunyé.\n\n
 CLASS:PUBLIC
-DTSTART:20230619T133000Z
-DTEND:20230619T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230619T133000
+DTEND;TZID=Europe/Paris:20230619T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -257,9 +274,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:TTC 2023 - Incremental MTL vs. GPLs: Class into Relational Database Schema
 DESCRIPTION:Speaker: Théo Le Calvar.\n\n<p>A quick focus on model transformation languages and general purpose languages expressiveness and ease of use in the context of incremental model transformation. <a href="https://www.transformation-tool-contest.eu/TTC_2023_paper_4.pdf">Link to paper</a> and <a href="https://github.com/ATL-Research/incremental-class2relational/">Github</a></p>
 CLASS:PUBLIC
-DTSTART:20230515T133000Z
-DTEND:20230515T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230515T133000
+DTEND;TZID=Europe/Paris:20230515T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -271,9 +289,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Being sustainability chair of ICTS 2023
 DESCRIPTION:Speaker: Erwan Bousse.\n\n<p>A few words about the <a href="https://conf.researchr.org/home/ict4s-2023">ICT4S 2023</a> conference and my job there as “sustainability chair”</p>
 CLASS:PUBLIC
-DTSTART:20230509T133000Z
-DTEND:20230509T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230509T133000
+DTEND;TZID=Europe/Paris:20230509T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -285,9 +304,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Hiba's thesis overview: 'Performance Evaluation of Executable Domain-Specific Languages'
 DESCRIPTION:Speaker: Hiba Ajabri.\n\n<p>A brief introduction to Hiba’s thesis subject entitled Performance Evaluation of Executable Domain-Specific Languages: introduction of an overall architectural diagram of the RODIC ANR project, and of a technical diagram on the WP2 level, and presentation of some of results.</p>
 CLASS:PUBLIC
-DTSTART:20230424T133000Z
-DTEND:20230424T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230424T133000
+DTEND;TZID=Europe/Paris:20230424T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -299,9 +319,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Generating structurally realistic models with deep autoregressive networks
 DESCRIPTION:Speaker: Massimo Tisi.\n\n<p><em>Authors: José Antonio Hernández López; Jesús Sánchez Cuadrado</em></p> <p><a href="https://ieeexplore.ieee.org/document/9982379">Link to the paper</a></p>
 CLASS:PUBLIC
-DTSTART:20230417T133000Z
-DTEND:20230417T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230417T133000
+DTEND;TZID=Europe/Paris:20230417T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -313,9 +334,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Using Machine Learning to Build Test Oracles: an Industrial Case Study on Elevators Dispatching Algorithms
 DESCRIPTION:Speaker: Jean-Marie Mottu.\n\n<p>By <em>Aitor Arrieta; Jon Ayerdi; Miren Illarramendi; Aitor Agirre; Goiuria Sagardui; Maite Arratibel</em>.</p> <p><a href="Using Machine Learning to Build Test Oracles: an Industrial Case Study on Elevators Dispatching Algorithms">Link to the paper</a></p>
 CLASS:PUBLIC
-DTSTART:20230411T133000Z
-DTEND:20230411T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230411T133000
+DTEND;TZID=Europe/Paris:20230411T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -327,9 +349,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Model-driven engineering for certifiable safety-critical systems
 DESCRIPTION:Speaker: Ghizlane El Boussaidi.\n\n<p><a href="https://www.etsmtl.ca/recherche/professeurs-chercheurs/gelboussaidi/">Guest speaker from ÉTS Montréal</a></p>
 CLASS:PUBLIC
-DTSTART:20230403T133000Z
-DTEND:20230403T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230403T133000
+DTEND;TZID=Europe/Paris:20230403T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -341,9 +364,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Towards Automating the Design of Cyber-Physical Systems: The Experience of Volvo Construction Equipment
 DESCRIPTION:Speaker: Hugo Bruneliere.\n\n<p><em>Johan Bergelin, Luca Berardinelli, Damir Bilic, Hugo Bruneliere, Antonio Cicchetti, MohammadHadi Dehghani, Claudio Di Sipio, James Miranda, Abbas Rahimi, and Riccardo Rubei</em></p> <p>Submitted to <a href="https://conf.researchr.org/home/ecmfa-2023">ECMFA 2023</a>.</p>
 CLASS:PUBLIC
-DTSTART:20230306T133000Z
-DTEND:20230306T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230306T133000
+DTEND;TZID=Europe/Paris:20230306T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -355,9 +379,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Protocol-Based Interactive Debugging for Domain-Specific Languages
 DESCRIPTION:Speaker: Josselin Enet.\n\n<p>WIP to be submitted to ECMFA 2023</p>
 CLASS:PUBLIC
-DTSTART:20230213T133000Z
-DTEND:20230213T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230213T133000
+DTEND;TZID=Europe/Paris:20230213T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -369,9 +394,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:A Generic Framework for Representing and Analysing Model Concurrency
 DESCRIPTION:Speaker: Erwan Bousse.\n\n<p>Paper accepted in 01/2023 at <a href="https://sosym.org/">SoSym</a></p> <p><a href="https://link.springer.com/article/10.1007/s10270-022-01073-2">Link to paper</a></p>
 CLASS:PUBLIC
-DTSTART:20230116T133000Z
-DTEND:20230116T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230116T133000
+DTEND;TZID=Europe/Paris:20230116T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -383,9 +409,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:AI-augmented Model Transformations
 DESCRIPTION:Speaker: Matthew Coyle.\n\n
 CLASS:PUBLIC
-DTSTART:20230109T133000Z
-DTEND:20230109T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20230109T133000
+DTEND;TZID=Europe/Paris:20230109T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -397,9 +424,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Testing, debugging and program visualisation @RMod
 DESCRIPTION:Speaker: Anne Etien.\n\n<p><a href="https://www.cristal.univ-lille.fr/profil/etien/">Anne Etien</a> is full professor in the <a href="https://rmod.gitlabpages.inria.fr/website/">RMod group</a> in Lille. She will give an overview of some research activities in her group.</p>
 CLASS:PUBLIC
-DTSTART:20221212T133000Z
-DTEND:20221212T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20221212T133000
+DTEND;TZID=Europe/Paris:20221212T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -411,9 +439,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Current state on Business-IT alignment
 DESCRIPTION:Speaker: Ali Benjilany.\n\n<p>Paper recently submitted at <a href="https://caise23.svit.usj.es/">CAiSE’23</a></p>
 CLASS:PUBLIC
-DTSTART:20221205T133000Z
-DTEND:20221205T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20221205T133000
+DTEND;TZID=Europe/Paris:20221205T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -425,9 +454,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:From Coverage Computation to Fault Localization: A Generic Framework for  Domain-Specific Languages
 DESCRIPTION:Speaker: Faezeh Khorram.\n\n<p><em>Faezeh Khorram, Erwan Bousse, Antonio Garmendia, Jean-Marie Mottu, Gerson Sunyé, Manuel Wimmer</em></p> <p>Rehearsal for presenting at <a href="https://2022.splashcon.org/home/sle-2022">SLE 2022</a></p> <p><a href="https://hal.archives-ouvertes.fr/hal-03815772/document">Link to the paper</a></p>
 CLASS:PUBLIC
-DTSTART:20221128T133000Z
-DTEND:20221128T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20221128T133000
+DTEND;TZID=Europe/Paris:20221128T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -439,9 +469,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Graph neural networks and how it relates with models
 DESCRIPTION:Speaker: James Miranda.\n\n<p>Current research work</p>
 CLASS:PUBLIC
-DTSTART:20221107T133000Z
-DTEND:20221107T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20221107T133000
+DTEND;TZID=Europe/Paris:20221107T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -453,9 +484,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Automatic Test Amplification for Executable Models
 DESCRIPTION:Speaker: Faezeh Khorram.\n\n<p><em>Faezeh Khorram, Erwan Bousse, Jean-Marie Mottu, Gerson Sunyé, Pablo Gómez-Abajo, Pablo C Cañizares, Esther Guerra, Juan de Lara</em></p> <p>Rehearsal for presenting at <a href="https://conf.researchr.org/home/models-2022">MODELS 2022</a></p> <p><a href="https://hal.archives-ouvertes.fr/hal-03745034">Link to the paper</a></p>
 CLASS:PUBLIC
-DTSTART:20221017T133000Z
-DTEND:20221017T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20221017T133000
+DTEND;TZID=Europe/Paris:20221017T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -467,9 +499,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:A Tool-Assisted Approach to Engineer Domain-Specific Languages (DSLs) using Rust
 DESCRIPTION:Speaker: Gerson Sunyé.\n\n<p><em>Léo Olivier, Lou-Anne Sauvêtre, Erwan Bousse, Gerson Sunyé</em></p> <p>Rehearsal for presenting at « MLE 2022 »</p> <p><a href="https://hal.archives-ouvertes.fr/hal-03790527">Link to the paper</a></p>
 CLASS:PUBLIC
-DTSTART:20221010T133000Z
-DTEND:20221010T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20221010T133000
+DTEND;TZID=Europe/Paris:20221010T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -481,9 +514,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Code-First Model-Driven Engineering: On the Agile Adoption of MDE Tooling
 DESCRIPTION:Speaker: Massimo Tisi.\n\n<p><em>Artur Boronat</em></p> <p>In « ASE 2019 »</p> <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8952237">Link to the paper</a></p> <p><a href="https://www.slideshare.net/aboronat/codefirst-modeldriven-engineeringon-the-agile-adoption-of-mde">Link to the slides</a></p>
 CLASS:PUBLIC
-DTSTART:20221003T133000Z
-DTEND:20221003T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20221003T133000
+DTEND;TZID=Europe/Paris:20221003T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -495,9 +529,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:Let us not put all our eggs in one basket
 DESCRIPTION:Speaker: Erwan Bousse.\n\n<p><em>Florence Maraninchi</em></p> <p>In « Communications of the ACM », September 2022</p> <p><a href="https://dl.acm.org/doi/10.1145/3528088">Link to the paper</a></p>
 CLASS:PUBLIC
-DTSTART:20220926T133000Z
-DTEND:20220926T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20220926T133000
+DTEND;TZID=Europe/Paris:20220926T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
 
@@ -509,9 +544,10 @@ LOCATION: See room reservation calendar.
 SUMMARY:A feature-based survey of Fog modeling languages
 DESCRIPTION:Speaker: Hugo Brunelière.\n\n<p><em>Abdelghani Alidraab, Hugo Bruneliere, Thomas Ledoux</em></p> <p>In « Future Generation Computer Systems », August 2022</p> <p><a href="https://www.sciencedirect.com/science/article/pii/S0167739X22002710">Link to the paper</a></p>
 CLASS:PUBLIC
-DTSTART:20220912T133000Z
-DTEND:20220912T140000Z
-DTSTAMP:16010101T020000Z
+DTSTART;TZID=Europe/Paris:20220912T133000
+DTEND;TZID=Europe/Paris:20220912T140000
+DTSTAMP;TZID=Europe/Paris:20231113T113123
+LAST-MODIFIED;TZID=Europe/Paris:20231113T113123
 
 END:VEVENT
  

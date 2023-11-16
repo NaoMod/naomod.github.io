@@ -119,3 +119,9 @@ ul {
 }
 
 
+blockquote {
+  margin-left: 32px;
+  font-style: italic;
+  border-left: 4px solid #CCC;
+  padding-left: 8px;
+}

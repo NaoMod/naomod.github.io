@@ -6,10 +6,8 @@ X-WR-CALNAME:Naomod weekly seminars
 VERSION:2.0
 METHOD:PUBLISH
 PRODID: Generated with Naomod website
-
 BEGIN:VTIMEZONE
 TZID:Europe/Paris
-
 BEGIN:STANDARD
 DTSTART:16010101T030000
 TZOFFSETTO:+0100
@@ -17,7 +15,6 @@ TZOFFSETFROM:+0200
 RRULE:FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=10;BYDAY=-1SU
 TZNAME:CET
 END:STANDARD
-
 BEGIN:DAYLIGHT
 DTSTART:16010101T020000Z
 TZOFFSETTO:+0200
@@ -26,11 +23,9 @@ RRULE:FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=3;BYDAY=-1SU
 TZNAME:CEST
 END:DAYLIGHT
 END:VTIMEZONE
-
 {% for cat in site.categories%}
 {% if cat[0] == "seminar" %} {% for post in cat[1] %}
 BEGIN:VEVENT
-
 UID:{{ post.date | date: "%Y%m%d" }}@naomod.github.io
 ORGANIZER;CN=Erwan BOUSSE:mailto:erwan.bousse@univ-nantes.fr
 LOCATION: See room reservation calendar.
@@ -41,7 +36,6 @@ DTSTART;TZID=Europe/Paris:{{ post.date | date: "%Y%m%d" }}T{{post.start}}00
 DTEND;TZID=Europe/Paris:{{ post.date | date: "%Y%m%d" }}T{{post.end}}00
 DTSTAMP;TZID=Europe/Paris:{{ site.time | date: "%Y%m%dT%H%M%S" }}
 LAST-MODIFIED;TZID=Europe/Paris:{{ site.time | date: "%Y%m%dT%H%M%S" }}
-
 END:VEVENT
 {% endfor %} {% endif %}
 {% endfor %}

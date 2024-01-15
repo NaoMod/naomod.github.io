@@ -20,9 +20,9 @@ def find_next_monday(date: datetime.date):
     return on_day(date, 0)
 
 
-def generate_event_file(date: datetime.date, speaker: str, counter: int):
+def generate_event_file(date: datetime.date, speaker: str):
     next_monday: datetime.date = find_next_monday(date)
-    file_name = str(next_monday) + "-talk" + str(counter) + ".md"
+    file_name = str(next_monday) + "-" + speaker + ".md"
     output_file: Path = output_dir / file_name
     output_file.write_text(template.substitute(speaker=speaker))
     print("Created " + str(output_file))
@@ -65,14 +65,11 @@ template: Template = Template(example_file.read_text())
 # Loop
 ############
 current_date = find_next_monday(start_date + datetime.timedelta(days=1))
-counter: int = 1
 
 for speaker in speakers:
-    generate_event_file(current_date, speaker, counter)
-    counter = counter + 1
+    generate_event_file(current_date, speaker)
     current_date = find_next_monday(current_date + datetime.timedelta(days=1))
 
 for extra in range(0, extra_dates):
-    generate_event_file(current_date, "TBA", counter)
-    counter = counter + 1
+    generate_event_file(current_date, "TBA")
     current_date = find_next_monday(current_date + datetime.timedelta(days=1))

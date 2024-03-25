@@ -31,8 +31,8 @@ def generate_event_file(date: datetime.date, speaker: str):
 ############
 # Input data
 ############
-start_date: datetime.date = datetime.date(2023, 11, 14)
-output_dir: Path = Path("./seminar/test/_posts")
+start_date: datetime.date = datetime.date(2024, 4, 28)
+output_dir: Path = Path("./seminar/2324/_posts")
 speakers: list[str] = [
     "Gerson Sunyé",
     "Massimo Tisi",
@@ -44,7 +44,7 @@ speakers: list[str] = [
     "Hiba Ajabri",
     "Ali Benjilany",
     "Matthew Coyle",
-    "Yasmina Daliyoucef",
+    "Yasmina Dali Youcef",
     "Josselin Enet",
     "James Miranda",
 ]

@@ -1,7 +1,8 @@
 ---
 layout : null
-title : "TBA (tool of the week)"
+title : "CorrectExam demonstration"
 speaker : "Gerson Sunyé"
 start : "0930"
 end : "1000"
 ---
+[Homepage](https://correctexam.github.io/)

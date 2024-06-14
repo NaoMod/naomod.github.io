@@ -52,13 +52,13 @@ area {
 
 header {
   /*background-color: #7bbeff;*/
-  background-color: #dddddd;
+  background-color: #eeeeee;
   color: #323232;
   /*text-shadow: 1px 1px 2px #2f679c;*/
   text-align: center;
   padding: 1rem 1rem;
   margin-bottom: 3rem;
-  border-bottom: 3px solid #aaaaaa;
+  border-bottom: 3px solid #dddddd;
 }
 
 header a {

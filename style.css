@@ -53,7 +53,7 @@ area {
 header {
   /*background-color: #7bbeff;*/
   background-color: #dddddd;
-  color: #fafafa;
+  color: #323232;
   /*text-shadow: 1px 1px 2px #2f679c;*/
   text-align: center;
   padding: 1rem 1rem;
@@ -74,7 +74,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  border-bottom: 3px solid #ffc570;
+  border-bottom: 3px solid #ac39a6;
 }
 
 footer a {
@@ -105,7 +105,7 @@ section { margin-top: 2.5rem; }
 }
 
 .active {
-  border-bottom: 3px solid #ffc570;
+  border-bottom: 3px solid #ac39a6;
 }
 
 ul {

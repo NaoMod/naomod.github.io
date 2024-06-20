@@ -58,11 +58,11 @@ header {
   text-align: center;
   padding: 1rem 1rem;
   margin-bottom: 3rem;
-  border-bottom: 3px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 header a {
-  color: #323232;
+  color: #3489d5;
   text-decoration: none;
 }
 

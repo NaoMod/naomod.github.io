@@ -105,8 +105,7 @@ section { margin-top: 2.5rem; }
 }
 
 .active {
-  color: #3489d5;
-  border-bottom: 3px solid #ac39a6;
+  border-bottom: 3px solid #3489d5;
 }
 
 ul {

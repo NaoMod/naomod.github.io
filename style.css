@@ -52,17 +52,18 @@ area {
 
 header {
   /*background-color: #7bbeff;*/
-  background-color: #eeeeee;
-  color: #ab39a6;
+  /*background-color: #eeeeee;*/
+  color: #323232;
   /*text-shadow: 1px 1px 2px #2f679c;*/
   text-align: center;
   padding: 1rem 1rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid #dddddd;
+  font-weight: normal;
 }
 
 header a {
-  color: #3489d5;
+  color: #323232;
   text-decoration: none;
 }
 
@@ -101,7 +102,6 @@ section { margin-top: 2.5rem; }
 #menu a {
   margin: 0 1rem;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .active {

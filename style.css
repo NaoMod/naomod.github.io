@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #333;
   background-color: #fafafa;
@@ -53,7 +53,7 @@ area {
 header {
   /*background-color: #7bbeff;*/
   background-color: #eeeeee;
-  color: #323232;
+  color: #ab39a6;
   /*text-shadow: 1px 1px 2px #2f679c;*/
   text-align: center;
   padding: 1rem 1rem;

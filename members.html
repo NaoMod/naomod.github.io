@@ -297,7 +297,6 @@ former:
 </section>
 
 <center>
-<img src="img/team2020.jpg" alt="Team group photo" usemap="#potw", width="70%"> 
 </center>	
 <!--     <ul class="past-members">
       {% for member in page.former %}
@@ -310,13 +309,14 @@ former:
 <section>
   <h2>Former Members</h2> 
   <hr/>
-<p>
-  <a href="img/former.jpg"><img src="img/former.jpg" alt="Former team group photo" usemap="#potw" align="left" width="55%" hspace="20"></a>
-</p>
-<p>
+  
+  <img src="img/team2020.jpg" alt="Team group photo" usemap="#potw", width="70%"> <br/>
+
+  <a href="img/former.jpg"><img src="img/former.jpg" alt="Former team group photo" usemap="#potw" width="70%" hspace="20"></a> <br/>
+
   <ul class="past-members" align="left">
     {% for member in page.former %}
     <li>{% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</li>
     {% endfor %}
   </ul>
-</p></section>
+</section>

@@ -31,6 +31,7 @@ h2 {
   font-size: 2rem; 
   margin-top: 1.5rem; 
   margin-bottom: 1.2rem;
+  font-weight: normal;
 }
 
 h3 { display: inline; }
@@ -52,14 +53,13 @@ area {
 
 header {
   /*background-color: #7bbeff;*/
-  /*background-color: #eeeeee;*/
+  background-color: #eeeeee;
   color: #323232;
   /*text-shadow: 1px 1px 2px #2f679c;*/
   text-align: center;
   padding: 1rem 1rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid #dddddd;
-  font-weight: normal;
 }
 
 header a {

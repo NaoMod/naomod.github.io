@@ -1,21 +1,21 @@
-- text: About
+- text: about
   url: /
 
-- text: Members
+- text: members
   url: /members
 
-- text: Publications
+- text: publications
   url: /publications
 
-- text: Projects
+- text: projects
   url: /projects
 
-- text: Openings
+- text: openings
   url: /openings
   
-- text: Software
+- text: software
   url: http://www.atlanmod.org
 
-- text: Weekly Seminar
+- text: seminars
   url: /seminars
 

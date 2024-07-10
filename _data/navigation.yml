@@ -13,8 +13,8 @@
 - text: openings
   url: /openings
   
-- text: software
-  url: http://www.atlanmod.org
+- text: tools
+  url: /tools
 
 - text: seminars
   url: /seminars

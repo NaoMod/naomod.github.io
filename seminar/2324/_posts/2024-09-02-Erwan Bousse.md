@@ -1,6 +1,6 @@
 ---
 layout : null
-title : "gitlab-ci-local − Gitlab CI jobs on your own computer"
+title : "gitlab-ci-local: Gitlab CI jobs on your own computer"
 speaker : "Erwan Bousse"
 start : "0930"
 end : "1000"

@@ -1,5 +1,5 @@
 - text: about
-  url: /
+  url: /about
 
 - text: members
   url: /members
@@ -13,9 +13,11 @@
 - text: openings
   url: /openings
   
-- text: software
-  url: http://www.atlanmod.org
+- text: tools
+  url: /tools
 
 - text: seminars
   url: /seminars
 
+- text: wiki
+  url: https://github.com/NaoMod/naomod.github.io/wiki

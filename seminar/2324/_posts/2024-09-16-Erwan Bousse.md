@@ -1,6 +1,6 @@
 ---
 layout : null
-title : "Towards Model-Driven Test Case Concretization for End-to-end Combinatorial Testing]"
+title : "Towards Model-Driven Test Case Concretization for End-to-end Combinatorial Testing"
 speaker : "Erwan Bousse"
 start : "0930"
 end : "1000"

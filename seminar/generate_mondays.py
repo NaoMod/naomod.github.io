@@ -31,7 +31,7 @@ def generate_event_file(date: datetime.date, speaker: str):
 ############
 # Input data
 ############
-start_date: datetime.date = datetime.date(2024, 9, 23)
+start_date: datetime.date = datetime.date(2025, 2, 5)
 output_dir: Path = Path("./seminar/2425/_posts")
 speakers: list[str] = [
     "Gerson Sunyé",
@@ -42,10 +42,12 @@ speakers: list[str] = [
     "Jean-Marie Mottu",
     "Dalila Tamzalit",
     "Hiba Ajabri",
-    "Ali Benjilany",
     "Matthew Coyle",
     "Yasmina Dali Youcef",
-    "James Miranda",
+    "Julien Cohen",
+    "Nouhaila Mraikh",
+    "Luigi Brandolini",
+    "Zakaria Hachm"
 ]
 random.shuffle(speakers)
 extra_dates: int = 5

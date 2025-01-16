@@ -1,7 +1,7 @@
 ---
 layout : null
 title : "TBA"
-speaker : "$speaker"
+speaker : "Théo Le Calvar"
 start : "1330"
 end : "1400"
 ---

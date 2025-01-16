@@ -1,7 +1,7 @@
 ---
 layout : null
 title : "TBA"
-speaker : "$speaker"
+speaker : "Julien Cohen"
 start : "1330"
 end : "1400"
 ---

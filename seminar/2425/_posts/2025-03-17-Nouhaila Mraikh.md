@@ -1,7 +1,7 @@
 ---
 layout : null
 title : "TBA"
-speaker : "$speaker"
+speaker : "Nouhaila Mraikh"
 start : "1330"
 end : "1400"
 ---

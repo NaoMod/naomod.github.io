@@ -2,6 +2,6 @@
 layout : null
 title : "TBA"
 speaker : "Julien Cohen"
-start : "1330"
-end : "1400"
+start : "0930"
+end : "1000"
 ---

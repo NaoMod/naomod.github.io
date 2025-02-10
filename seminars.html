@@ -55,38 +55,22 @@ title: Weekly Seminar
 <!-- <p>This page is automatically generated from <a href="http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars">this ICS file</a> (<a href="https://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars.html
   ">calendar view</a>).</p> -->
 
-<p><a href="{{site.baseurl}}/naomod_weekly_seminars.ics">Link to calendar ICS file with all seminars with titles and descriptions.</a></p>
-
-<h2> Upcoming seminars (list generated at {{ "now" | date: "%Y-%m-%d %H:%M" }}) </h2>
-
-<hr/>
-
-{% assign counter = 0 %}
-{% for post in site.posts reversed %}
-  {% if counter > 4 %} {% break %} {% endif%}
-
-  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-  {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-  {% if posttime > nowunix %}
-    {% include seminar_presentation.html %}
-    {% assign counter = counter | plus: 1 %}
-  {% endif%}
-{% endfor %}
-
-<details> <summary>Click here to see more upcoming seminars</summary>
+<details> <summary>Click here to see more upcoming seminars (list generated at {{ "now" | date: "%Y-%m-%d %H:%M" }}</summary>
   
 {% assign counter = 0 %}
 {% for post in site.posts reversed%}
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
   {% if posttime > nowunix %}
-      {% if counter > 4 %}
+      {% if counter >= 0 %}
         {% include seminar_presentation.html %}
       {% endif%}
       {% assign counter = counter | plus: 1 %}
   {% endif%}
   
 {% endfor %}
+
+<p><a href="{{site.baseurl}}/naomod_weekly_seminars.ics">Link to calendar ICS file with all seminars with titles and descriptions.</a></p>
   
 </details>
 

@@ -1,20 +1,20 @@
 - text: members
   url: /members
 
-- text: publications
-  url: /publications
-
 - text: projects
   url: /projects
 
-- text: openings
-  url: /openings
+- text: publications
+  url: /publications
   
 - text: tools
   url: /tools
 
 - text: seminars
   url: /seminars
+
+- text: openings
+  url: /openings
 
 - text: wiki
   url: https://github.com/NaoMod/naomod.github.io/wiki

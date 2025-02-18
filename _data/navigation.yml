@@ -1,17 +1,14 @@
 - text: about
-  url: /about
+  url: /
 
 - text: members
   url: /members
 
-- text: publications
-  url: /publications
-
 - text: projects
   url: /projects
 
-- text: openings
-  url: /openings
+- text: publications
+  url: /publications
   
 - text: tools
   url: /tools

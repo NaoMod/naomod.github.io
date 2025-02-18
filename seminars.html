@@ -50,44 +50,28 @@ title: Weekly Seminar
 
 </style>
 
-<p>NaoMod hosts one seminar per week where group member or a guest speaker gives a talk on a subject of their choosing, such as an interesting paper, their ongoing work, a nice tool they discovered, or inspirational thoughts. </p>
+<p>NaoMod hosts one seminar per week where group member or a guest speaker gives a talk on a subject of their choosing, such as an interesting paper, their ongoing work, a nice tool they discovered, or inspirational thoughts 
+  (<a href="{{site.baseurl}}/naomod_weekly_seminars.ics">here</a> is the calendar ICS file with the full list of seminars).
+</p>
 
 <!-- <p>This page is automatically generated from <a href="http://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars">this ICS file</a> (<a href="https://agenda.univ-nantes.fr/home/bousse-e@univ-nantes.fr/NaomodWeeklySeminars.html
   ">calendar view</a>).</p> -->
 
-<p><a href="{{site.baseurl}}/naomod_weekly_seminars.ics">Link to calendar ICS file with all seminars with titles and descriptions.</a></p>
-
-<h2> Upcoming seminars (list generated at {{ "now" | date: "%Y-%m-%d %H:%M" }}) </h2>
-
-<hr/>
-
-{% assign counter = 0 %}
-{% for post in site.posts reversed %}
-  {% if counter > 4 %} {% break %} {% endif%}
-
-  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-  {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-  {% if posttime > nowunix %}
-    {% include seminar_presentation.html %}
-    {% assign counter = counter | plus: 1 %}
-  {% endif%}
-{% endfor %}
-
-<details> <summary>Click here to see more upcoming seminars</summary>
+<details> <summary>Click here to see the upcoming seminars (list generated at {{ "now" | date: "%Y-%m-%d %H:%M" }})</summary>
   
 {% assign counter = 0 %}
 {% for post in site.posts reversed%}
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
   {% if posttime > nowunix %}
-      {% if counter > 4 %}
+      {% if counter >= 0 %}
         {% include seminar_presentation.html %}
       {% endif%}
       {% assign counter = counter | plus: 1 %}
   {% endif%}
   
 {% endfor %}
-  
+
 </details>
 
 <h2> Past seminars </h2>

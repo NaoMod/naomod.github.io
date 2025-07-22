@@ -53,8 +53,7 @@ function tag(pub) {
   case 'COUV': type = "Book Chapter"; break
   case 'THESE': type = "PhD Thesis"; break
   case 'HDR': type = "Habilitation Thesis"; break
-  case 'RESREPORT': type = "Research Report"; break
-  case 'TECHREPORT': type = "Technical Report"; break
+  case 'REPORT': type = "Research/Technical Report"; break
   case 'PREPRINT': type = "Preprint"; break
   case 'OTHER': type = "Other Publication"; break
   }

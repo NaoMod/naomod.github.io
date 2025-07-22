@@ -54,7 +54,7 @@ function tag(pub) {
   case 'THESE': type = "PhD Thesis"; break
   case 'HDR': type = "Habilitation Thesis"; break
   case 'REPORT': type = "Research/Technical Report"; break
-  case 'PREPRINT': type = "Preprint"; break
+  case 'UNDEFINED': type = "Preprint"; break
   case 'OTHER': type = "Other Publication"; break
   }
   if (type) {

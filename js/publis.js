@@ -55,8 +55,8 @@ function tag(pub) {
   case 'HDR': type = "Habilitation Thesis"; break
   case 'RESREPORT': type = "Research Report"; break
   case 'TECHREPORT': type = "Technical Report"; break
+  case 'PREPRINT': type = "Preprint"; break
   case 'OTHER': type = "Other Publication"; break
-  case 'UNDEFINED': type = "Preprint (Not Published)"; break
   }
   if (type) {
     return `<span class="tag">${type}</span>`

@@ -46,11 +46,16 @@ function venue(pub) {
 function tag(pub) {
   let type
   switch (pub.docType_s) {
-  case 'COMM': type = "Conference"; break
-  case 'ART': type = "Journal"; break
+  case 'COMM': type = "Conference Paper"; break
+  case 'ART': type = "Journal Paper"; break
+  case 'PROCEEDINGS': type = "Proceedings"; break
+  case 'OUV': type = "Book"; break
+  case 'COUV': type = "Book Chapter"; break
+  case 'THESE': type = "PhD Thesis"; break
+  case 'HDR': type = "Habilitation Thesis"; break
+  case 'REPORT': type = "Research/Technical Report"; break
   case 'UNDEFINED': type = "Preprint"; break
-  case 'THESE': type = "Thesis"; break
-  case 'HDR': type = "HDR"; break
+  case 'OTHER': type = "Other Publication"; break
   }
   if (type) {
     return `<span class="tag">${type}</span>`

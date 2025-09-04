@@ -12,7 +12,7 @@ podman run --rm \
   -e JEKYLL_ROOTLESS=1  \
   --volume="$PWD:/srv/jekyll:Z" \
   --volume="$PWD/bundle:/usr/local/bundle:Z" \
-  --publish [::1]:4000:4000 \
+  --publish 127.0.0.1:4000:4000 \
   --name jekyll \
   jekyll/minimal \
   bash serve.sh

@@ -1,7 +1,7 @@
 ---
 layout : null
 title : "TBA"
-speaker : "Théo Le Calvar"
+speaker : "Matthew Coyle"
 start : "1330"
 end : "1400"
 ---

@@ -5,6 +5,6 @@ plugins:
 
 timezone: Europe/Paris
 
-permalink: /:title
+permalink: /:categories/:year/:month/:day/:title
 
 future: true

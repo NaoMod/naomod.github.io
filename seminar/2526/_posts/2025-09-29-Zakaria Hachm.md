@@ -1,7 +1,7 @@
 ---
 layout : null
 title : "TBA"
-speaker : "Massimo Tisi"
+speaker : "Zakaria Hachm"
 start : "1330"
 end : "1400"
 ---

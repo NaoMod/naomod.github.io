@@ -1,7 +1,8 @@
 ---
 layout : null
 title : "TBA"
-speaker : "Hugo Bruneliere"
+speaker : "Hugo Brunelière"
 start : "1330"
 end : "1400"
 ---
+

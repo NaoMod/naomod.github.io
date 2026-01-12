@@ -1,0 +1,28 @@
+name: Build Jekyll and deploy Github page
+
+on:
+  # Build on each push
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: docker.io/jekyll/minimal
+    steps:
+
+    # Prepare environment
+    - uses: actions/checkout@v6
+    - run: apk add rsync
+    - run: git config --global --add safe.directory '*'
+    - run: chown 1000:1000 -R .
+
+    # Build
+    - run: bundle install
+    - run: jekyll build
+
+    # Deploy page
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: _site

@@ -1,28 +1,30 @@
-name: Build Jekyll and deploy Github page
-
+name: Build Jekyll site
 on:
-  # Build on each push
-  push:
-
+ push:
+   branches: ["main"]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: 
-      image: docker.io/jekyll/minimal
     steps:
-
-    # Prepare environment
-    - uses: actions/checkout@v3
-    - run: apk add rsync
-    - run: git config --global --add safe.directory '*'
-    - run: chown 1000:1000 -R .
-
-    # Build
-    - run: bundle install
-    - run: jekyll build
-
-    # Deploy page
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: _site
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build
+        uses: actions/jekyll-build-pages@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}

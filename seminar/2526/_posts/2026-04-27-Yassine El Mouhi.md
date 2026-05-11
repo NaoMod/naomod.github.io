@@ -1,7 +1,7 @@
 ---
 layout : null
-title : "TBA"
-speaker : "Yassine El Mouhi"
+title : "Phd defense rehearsal"
+speaker : "Hiba Ajabri"
 start : "1330"
-end : "1400"
+end : "1430"
 ---

@@ -1,7 +1,7 @@
 ---
 layout : null
 title : "TBA"
-speaker : "Nouhaila Mraikh"
+speaker : "Erwan Bousse"
 start : "1330"
 end : "1400"
 ---

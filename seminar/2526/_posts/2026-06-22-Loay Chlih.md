@@ -1,6 +1,6 @@
 ---
 layout : null
-title : "TBA"
+title : "Modelio"
 speaker : "Loay Chlih"
 start : "1330"
 end : "1400"

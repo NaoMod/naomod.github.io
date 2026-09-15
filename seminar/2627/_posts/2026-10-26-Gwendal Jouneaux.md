@@ -1,7 +1,7 @@
 ---
 layout : null
 title : "TBA"
-speaker : "Gerson Sunyé"
+speaker : "Gwendal Jouneaux"
 start : "1330"
 end : "1400"
 ---

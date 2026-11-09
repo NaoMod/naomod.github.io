@@ -1,6 +1,6 @@
 ---
 layout : null
-title : "TBA"
+title : "PhD defense rehearsal"
 speaker : "Matthew Coyle"
 start : "1330"
 end : "1400"

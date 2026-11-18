@@ -2,6 +2,6 @@
 layout : null
 title : "TBA"
 speaker : "Yassine El Mouhi"
-start : "1330"
-end : "1400"
+start : "1000"
+end : "1030"
 ---
